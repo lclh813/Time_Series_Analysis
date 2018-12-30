@@ -3,9 +3,9 @@
 ## Part 2. Data
 ## Part 3. Outline
 ### 3.1. General ARIMA(p,d,q) Model
-> To identify a reasonably appropriate ARIMA model, ideally we need:  
-> ***Observation:*** ***n=50*** at minimum
-> ***lag-k:*** about ***n/4*** 
+> To identify a reasonably appropriate ARIMA model, ideally we need:    
+> ***Observation:*** ***n=50*** at minimum  
+> ***lag-k:*** about ***n/4***   
 
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/ArimaModel.png"/></div>
