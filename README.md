@@ -12,7 +12,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 - [Time Series Analysis: Univariate and Multivariate Methods](https://www.amazon.com/Time-Analysis-Univariate-Multivariate-Methods/dp/0321322169) 
   - Author: ***William W.S. Wei***
 
-### 3.2. General ***ARIMA(p,d,q) Model***
+### 3.2. General ***ARIMA(p,d,q)*** Model
 - ***ARIMA*** stands for ***Autoregressive Integrated Moving Average Models*** and are, in theory, the most general models for forecasting a time series.
 - ARIMA Model and its parameters are illustrated as follows: 
 <br>
