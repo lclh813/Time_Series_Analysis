@@ -8,13 +8,13 @@
 - A series with ***nonconstant variance*** often needs a ***variance-stabilizing transformation*** and ```Box-Cox’s Transformation``` can be applied.
 - ***Box-Cox’s Transformation***  
 
-$$
+\begin{align*}
 t_{\lambda }\left ( y \right )= 
 \left\{\begin{matrix}
  &( y^{^{\lambda }} \right-1 )/\lambda,  & if \lambda \neq 0\\
  & log\left ( y \right ),& if \lambda =0
 \end{matrix}\right.
-$$
+\end{align*}
 
 
 
