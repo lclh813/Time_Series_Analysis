@@ -107,3 +107,5 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 - Tool: R ```Package tseries``` ```Box.test```
 
 ## Part 4. Steps
+[Step 1. Plot the Time Series Data and Choose Proper Transformations]()
+<img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/ArimaParameter.png"/>
