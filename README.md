@@ -1,9 +1,13 @@
-# Time_Series_Analysis
+# Time Series Analysis
 ## Part 1. Objective
 ## Part 2. Data
 ## Part 3. Outline
 ### 3.1. Transformation
-- For some data, data after transformation can better fit a linear model. ***by Prof. Shao-Wei Cheng***  
+- For some data, data after transformation can better fit a linear model.  
+
+This is a guide on Markdown [Markdown][1].
+
+[1]: http://en.wikipedia.org/wiki/Markdown        "Markdown"
 
 
 
