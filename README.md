@@ -29,7 +29,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 - To make a non-stationary series ***stationary.***
 - Tool: ```ACF``` ```PACF```
   - ***ACF*** stands for ***Autocorrelation Function.***
-  - ***PACF*** stands for ***Partial Autocorrelation Function***
+  - ***PACF*** stands for ***Partial Autocorrelation Function.***
   - If the sample ***ACF*** decays very ***slowly*** and the sample ***PACF*** cuts off after ***lag 1***, then it indicates that differencing is needed.
   
 ### Step 2.2. Seasonal Differencing
