@@ -8,7 +8,7 @@
 - A series with ***nonconstant variance*** often needs a ***variance-stabilizing transformation*** and ```Box-Cox’s Transformation``` can be applied.
 - ***Box-Cox’s Transformation***
 
-<img src="http://www.forkosh.com/mathtex.cgi? t_{\lambda }\left ( y \right )=log\left ( y \right ) ,\, \, \, if \, \, \lambda =  0">
+<img src="http://chart.googleapis.com/chart?cht=tx&chl= t_{\lambda }\left ( y \right )=log\left ( y \right ) ,\, \, \, if \, \, \lambda =  0" style="border:none;">
 
 
 
