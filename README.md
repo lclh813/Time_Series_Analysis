@@ -3,16 +3,16 @@
 ## Part 2. Data
 ## Part 3. Outline
 ### 3.1. Plot the time series data amd choose proper transfornations.
-- Objective: To ***stabilize*** a series.
+- To ***stabilize*** a series with nonconstant variance.
 - Tool: ```Box-Cox’s Transformation```
 - ***Box-Cox’s Transformation*** 
 
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/CodeCogsEqn.png"/></div>
 
 ### 3.2. Further confirm a necessary degree of differencing.
-- Objective: To make a series ***stationary.***
+- To make a non-stationary series ***stationary.***
 - Tool: ```ACF``` ```PACF```
-  - If the sample ***ACF*** decays very slowly and the sample ***PACF*** cuts off after ***lag 1***, then it indicates that differencing  is needed.
+  - If the sample ***ACF*** decays very ***slowly*** and the sample ***PACF*** cuts off after ***lag 1***, then it indicates that differencing  is needed.
 
 Compute and examine the sample ADF and the sample PACF of the transformed series.
 - 
