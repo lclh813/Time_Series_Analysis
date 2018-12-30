@@ -8,17 +8,7 @@
 - A series with ***nonconstant variance*** often needs a ***variance-stabilizing transformation*** and ```Box-Cox’s Transformation``` can be applied.
 - ***Box-Cox’s Transformation*** 
 
-\begin{aligned}
-\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} & = \frac{4\pi}{c}\vec{\mathbf{j}} \\   \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
-\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
-\nabla \cdot \vec{\mathbf{B}} & = 0 
-\end{aligned}
-
-\begin{equation*}
-\dot{x} & = \sigma(y-x) \\
-\dot{y} & = \rho x - y - xz \\
-\dot{z} & = -\beta z + xy
-\end{equation*}
+<a href="https://www.codecogs.com/eqnedit.php?latex=\begin{aligned}&space;t_{\lambda&space;}\left&space;(&space;y&space;\right&space;)=&space;\left\{\begin{matrix}&space;&(&space;y^{^{\lambda&space;}}&space;\right-1&space;)/\lambda,&space;&&space;if&space;\lambda&space;\neq&space;0\\&space;&&space;log\left&space;(&space;y&space;\right&space;),&&space;if&space;\lambda&space;=0&space;\end{matrix}\right.&space;\end{aligned}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\begin{aligned}&space;t_{\lambda&space;}\left&space;(&space;y&space;\right&space;)=&space;\left\{\begin{matrix}&space;&(&space;y^{^{\lambda&space;}}&space;\right-1&space;)/\lambda,&space;&&space;if&space;\lambda&space;\neq&space;0\\&space;&&space;log\left&space;(&space;y&space;\right&space;),&&space;if&space;\lambda&space;=0&space;\end{matrix}\right.&space;\end{aligned}" title="\begin{aligned} t_{\lambda }\left ( y \right )= \left\{\begin{matrix} &( y^{^{\lambda }} \right-1 )/\lambda, & if \lambda \neq 0\\ & log\left ( y \right ),& if \lambda =0 \end{matrix}\right. \end{aligned}" /></a>
 
 
 
