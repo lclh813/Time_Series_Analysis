@@ -8,7 +8,10 @@
 - A series with ***nonconstant variance*** often needs a ***variance-stabilizing transformation*** and ```Box-Cox’s Transformation``` can be applied.
 - ***Box-Cox’s Transformation***
 
-<img src="http://chart.googleapis.com/chart?cht=tx&chl= t_{\lambda }\left ( y \right )=log\left ( y \right ) ,\, \, \, if \, \, \lambda =  0" style="border:none;">
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
+\\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\)
+
 
 
 
