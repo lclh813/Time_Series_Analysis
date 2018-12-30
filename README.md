@@ -12,7 +12,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 - [Time Series Analysis: Univariate and Multivariate Methods](https://www.amazon.com/Time-Analysis-Univariate-Multivariate-Methods/dp/0321322169) 
   - Author: William W.S. Wei
 
-### 3.1. General ARIMA(p,d,q) Model
+### 3.2. General ARIMA(p,d,q) Model
 - ***ARIMA*** stands for ***Autoregressive Integrated Moving Average Models*** and are, in theory, the most general models for forecasting a time series.
 - ARIMA Model and its parameters are illustrated as follows: 
 <br>
@@ -25,7 +25,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
   - ***Observations:*** A minimum of ***n=50*** observations.  
   - ***lag-k:*** The number of sample lag-k autocorrelations and autocorrelations to be calculated should be about ***n/4.*** 
 
-### 3.2. Steps for Model Identification
+### 3.3. Steps for Model Identification
 ### Step 1. Plot the Time Series Data and Choose Proper Transformations
 - A series with non-constant variance often needs a ***variance-stabilizing transformations.***
 - Tool: ```Box-Cox’s Transformation```
@@ -39,8 +39,9 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
   - ***ACF:*** 
     - Stands for ***Autocorrelation Function.***
     - It allows us to incorporate the effect of past values into our model.
-    - Intuitively, this would be similar to stating that it is likely to be warm tomorrow if it has been warm the past 3 days.
-  - ***PACF*** stands for ***Partial Autocorrelation Function.***
+  - ***PACF:*** 
+    - Stands for ***Partial Autocorrelation Function.***
+    - This allows us to set the error of our model as a linear combination of the error values observed at previous time points in the past.
   - If the sample ***ACF*** decays very ***slowly*** and the sample ***PACF*** cuts off after ***lag 1***, then it indicates that differencing is needed.
   
 ### Step 2.2. Seasonal Differencing
