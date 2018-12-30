@@ -6,6 +6,7 @@
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/ARIMA.png"/></div>
 <br>
+
 | Parameter | Definition                                       | Order | 
 | :---:     | :---                                             | :---: | 
 | ***p***   | Highest order in ***autoregressive polynomial*** | 0 ≦ ***P*** ≦ 3    | 
