@@ -92,16 +92,16 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 > **Option 5.1.1. Interpret the Plot**
 - Tool: R ```plot``` 
 > **Option 5.1.2. Augmented Dickey–Fuller (ADF) Test** 
-- Null hypothesis: A unit root is present in a time series sample, namely the series is ***not stationary.***
+- ***Null hypothesis:*** A unit root is present in a time series sample, namely the series is ***not stationary.***
 - Tool: R ```Package tseries``` ```adf.test```
 > **Step 5.2. Normality Test**
 
 > **Option 5.2.1. Interpret the Plot**  
 - Tool: R ```qqnorm``` ```qqline``` 
 > **Option 5.2.2. Shapiro Test**  
-- Null hypothesis: A set of observations is ***normally distributed.***
+- ***Null hypothesis:*** A set of observations is ***normally distributed.***
 - Tool: R ```shapiro.test```
 > **Step 5.3. Autocorrelation Test**
 > **Ljung-Box Q (LBQ) Test**
-- Null hypothesis: The first k autocorrelations are jointly zero, namely the data values are random and ***independent*** up to lag k.
+- ***Null hypothesis:*** The first k autocorrelations are jointly zero, namely the data values are random and ***independent*** up to lag k.
 - Tool: R ```Package tseries``` ```Box.test```
