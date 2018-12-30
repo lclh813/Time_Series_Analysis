@@ -28,7 +28,8 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 ### Step 2.1. Ordinary Differencing
 - To further confirm a necessary degree of differencing so that differenced series is ***stationary.***
 - Tool: ```ACF``` ```PACF```
-  - ***ACF*** stands for ***Autocorrelation Function.***
+  - ***ACF:*** 
+    - Stands for ***Autocorrelation Function.***
   - ***PACF*** stands for ***Partial Autocorrelation Function.***
   - If the sample ***ACF*** decays very ***slowly*** and the sample ***PACF*** cuts off after ***lag 1***, then it indicates that differencing is needed.
   
