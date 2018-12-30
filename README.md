@@ -6,6 +6,12 @@
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/ARIMA.png"/></div>
 <br>
+| Parameter | Definition                                       | Order | 
+| :---:     | :---                                             | :---: | 
+| ***p***   | Highest order in ***autoregressive polynomial*** | 0 ≦ ***P*** ≦ 3    | 
+| ***q***   | Highest order in ***moving average polynomial*** |       | 
+| ***d***   | Order of ***differencing***                      |     1 | 
+
 
 - ***p:*** The highest order in the ***autoregressive polynomial.*** 
   - Usually ***p*** is less than or equal to ***3.***
