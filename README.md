@@ -4,11 +4,8 @@
 ## Part 3. Outline
 ### 3.1. General ***ARIMA(p,d,q)*** Model
 <br>
-<br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/ARIMA.png"/></div>
 <br>
-<br>
-
 - ***p:*** The highest order in the ***autoregressive polynomial.*** Usually ***p*** is less than or equal to ***3.***
 - ***q:*** The highest order in the ***moving average polynomial.*** Usually ***q*** is less than or equal to ***3.***
 - ***d:*** The order of ***differencing.*** In most cases, ***d*** is either ***0, 1, or 2***. 
