@@ -19,14 +19,14 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 
 ### 3.2. Steps for Model Identification
 ### Step 1. Plot the Time Series Data and Choose Proper Transformations
-- To ***stabilize*** a series with nonconstant variance.
+- A series with non-constant variance often needs a ***variance-stabilizing transformations.***
 - Tool: ```Box-Cox’s Transformation```
 
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/BoxCox.png"/></div>
 
 ### Step 2. Identfy the Order of ***d***
 ### Step 2.1. Ordinary Differencing
-- To make a non-stationary series ***stationary.***
+- To further confirm a necessary degree of differencing so that differenced series is ***stationary.***
 - Tool: ```ACF``` ```PACF```
   - ***ACF*** stands for ***Autocorrelation Function.***
   - ***PACF*** stands for ***Partial Autocorrelation Function.***
