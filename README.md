@@ -34,7 +34,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/BoxCox.png"/></div>
 
 ### Step 2. Identfy the Order of ***d***
-### Step 2.1. Ordinary Differencing
+> **Step 2.1. Ordinary Differencing**
 - To further confirm a necessary degree of differencing so that differenced series is ***stationary.***
 - Tool: R ```acf``` ```pacf```
   - ***ACF:*** 
@@ -45,7 +45,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
     - This allows us to set the error of our model as a linear combination of the error values observed at previous time points in the past.
   - If the sample ***ACF*** decays very ***slowly*** and the sample ***PACF*** cuts off after ***lag 1***, then it indicates that differencing is needed.
   
-### Step 2.2. Seasonal Differencing
+> **Step 2.2. Seasonal Differencing**
 - To identify if there is a series of changes from one season to the next.
 - Tool: R ```acf``` ```pacf```
   - If the sample ***ACF*** and the sample ***PACF*** suggest that there might be seasonal structure in the time series, then a seasonal differencing should be further applied.
