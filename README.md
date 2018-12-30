@@ -6,11 +6,11 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 ## Part 3. Outline
 ### 3.1. Reference
 - [A Guide to Time Series Forecasting with ARIMA in Python 3](https://www.digitalocean.com/community/tutorials/a-guide-to-time-series-forecasting-with-arima-in-python-3)
-  - Author: ***Thomas Vincent***
+  - by ***Thomas Vincent***
 - [NTHU STAT 5410 - Linear Models](http://www.stat.nthu.edu.tw/~swcheng/Teaching/stat5410/index.php)
-  - Author: ***Shao-Wei Cheng***, Institute of Statistics, National Tsing Hua University
+  - by ***Shao-Wei Cheng***, Institute of Statistics, National Tsing Hua University
 - [Time Series Analysis: Univariate and Multivariate Methods](https://www.amazon.com/Time-Analysis-Univariate-Multivariate-Methods/dp/0321322169) 
-  - Author: ***William W.S. Wei***
+  - by ***William W.S. Wei***
 
 ### 3.2. General ***ARIMA(p,d,q)*** Model
 - ***ARIMA*** stands for ***Autoregressive Integrated Moving Average Models*** and are, in theory, the most general models for forecasting a time series.
@@ -29,7 +29,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 ### Step 1. Plot the Time Series Data and Choose Proper Transformations
 - A series with non-constant variance often needs a ***variance-stabilizing transformations.***
 - Tool: R ```library(forecast)``` ```BoxCox```
-  - Box-Cox’s Transformation:
+  - ***Box-Cox’s Transformation:***
 
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/BoxCox.png"/></div>
 
