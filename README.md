@@ -116,6 +116,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 
 **Step 2. Identfy the Order of** ***d***  
 [Step 2.1. Ordinary Differencing]()
+- The sample ACF decays very slowly, which suggests that differencing should be applied.
 
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/2_1_OrdinaryDifferencing.png"/></div>
 
