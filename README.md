@@ -4,6 +4,14 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 ## Part 1. Objective
 ## Part 2. Data
 ## Part 3. Outline
+### 3.1. Reference
+- [A Guide to Time Series Forecasting with ARIMA in Python 3](https://www.digitalocean.com/community/tutorials/a-guide-to-time-series-forecasting-with-arima-in-python-3)
+  - Author: Thomas Vincent
+- [NTHU STAT 5410 - Linear Models](http://www.stat.nthu.edu.tw/~swcheng/Teaching/stat5410/index.php)
+  - Author: Shao-Wei Cheng, Institute of Statistics, National Tsing Hua University
+- [Time Series Analysis: Univariate and Multivariate Methods](https://www.amazon.com/Time-Analysis-Univariate-Multivariate-Methods/dp/0321322169) 
+  - Author: William W.S. Wei
+
 ### 3.1. General ARIMA(p,d,q) Model
 - ***ARIMA*** stands for ***Autoregressive Integrated Moving Average Models*** and are, in theory, the most general models for forecasting a time series.
 - ARIMA Model and its parameters are illustrated as follows: 
@@ -30,6 +38,8 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 - Tool: ```ACF``` ```PACF```
   - ***ACF:*** 
     - Stands for ***Autocorrelation Function.***
+    - It allows us to incorporate the effect of past values into our model.
+    - Intuitively, this would be similar to stating that it is likely to be warm tomorrow if it has been warm the past 3 days.
   - ***PACF*** stands for ***Partial Autocorrelation Function.***
   - If the sample ***ACF*** decays very ***slowly*** and the sample ***PACF*** cuts off after ***lag 1***, then it indicates that differencing is needed.
   
