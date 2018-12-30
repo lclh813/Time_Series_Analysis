@@ -21,7 +21,9 @@
 - Tool: ```ACF``` ```PACF```
   - If the sample ***ACF*** and the sample ***PACF*** suggest that there might be seasonal structure in the time series, then a seasonal differencing should be further applied.
   
-## 3.3. 
+### 3.3. Identfy the Orders of ***p*** and ***q***
+  
+### 3.4. Determine the Coefficient of the Model
 
 
 ### 3.2. 
