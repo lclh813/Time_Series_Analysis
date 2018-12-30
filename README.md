@@ -2,11 +2,17 @@
 ## Part 1. Objective
 ## Part 2. Data
 ## Part 3. Outline
-### 3.1. Transformation
-- For some data, data after transformation can better fit a linear model.[1]  
+### 3.1. Plot the time series data amd choose proper transfornations.
+- The most commonly used transformations are ***(1) variance-stabilizing transformations and (2) differencing.*** 
+- For some data, data after transformation can better fit a linear model.
+### 3.2. 
 
+### Reference
+Professor Shao-Wei, Cheng
+Institute of Statistics, National Tsing Hua University
+http://www.stat.nthu.edu.tw/~swcheng/Teaching/stat5410/index.php
+- 08. Mean Structure and Transformation
 
-[1]: "Markdown"
 
 
 
