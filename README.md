@@ -38,8 +38,8 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 ### Step 3. Identfy the Orders of ***p*** and ***q***
 - Characteristics of theoretical ACF and PACF for stationary process are illustrated as follows:
 
-| Process     | ACF     | PACF |
-| :---:       | :---    | :--- |  
+| Process     | ACF      | PACF  |
+| :---:       | :---:    | :---: |  
 | ***AR(p)***     | Tails off as exponential decay or<br>damped sine wave | Cuts off after lag ***p*** |
 | ***MA(q)***     | Cuts off after lag ***q*** | Tails off as exponential decay or<br>damped sine wave |  
 | ***ARMA(p,q)*** | Tails off after lag ***(q-p)*** | Tails off after lag ***(p-q)*** |  
