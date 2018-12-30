@@ -7,6 +7,7 @@
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/ARIMA.png"/></div>
 <br>
 
+
 <center>
 | Parameter | Definition                                       | General Rule     | 
 | :---:     | :---                                             | :---:            | 
