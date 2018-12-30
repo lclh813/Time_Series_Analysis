@@ -6,11 +6,11 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 ## Part 3. Outline
 ### 3.1. Reference
 - [A Guide to Time Series Forecasting with ARIMA in Python 3](https://www.digitalocean.com/community/tutorials/a-guide-to-time-series-forecasting-with-arima-in-python-3)
-  - Author: Thomas Vincent
+  - Author: ***Thomas Vincent***
 - [NTHU STAT 5410 - Linear Models](http://www.stat.nthu.edu.tw/~swcheng/Teaching/stat5410/index.php)
-  - Author: Shao-Wei Cheng, Institute of Statistics, National Tsing Hua University
+  - Author: ***Shao-Wei Cheng***, Institute of Statistics, National Tsing Hua University
 - [Time Series Analysis: Univariate and Multivariate Methods](https://www.amazon.com/Time-Analysis-Univariate-Multivariate-Methods/dp/0321322169) 
-  - Author: William W.S. Wei
+  - Author: ***William W.S. Wei***
 
 ### 3.2. General ARIMA(p,d,q) Model
 - ***ARIMA*** stands for ***Autoregressive Integrated Moving Average Models*** and are, in theory, the most general models for forecasting a time series.
