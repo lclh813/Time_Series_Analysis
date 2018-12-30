@@ -7,8 +7,14 @@
 - Because ***variance-stabilizing transformations*** require ***non-negative*** values and ***differencing*** may create some ***negative*** values, ***variance-stabilizing transformations*** should always be applied ***before*** taking ***differencing.***
 - A series with ***nonconstant variance*** often needs a ***variance-stabilizing transformation*** and ```Box-Cox’s Transformation``` can be applied.
 - ***Box-Cox’s Transformation***  
-<a href="https://www.codecogs.com/eqnedit.php?latex=t_{\lambda&space;}\left&space;(&space;y&space;\right&space;)=&space;\center\{\begin{matrix}&space;&\left&space;(&space;y^{^{\lambda&space;}}&space;\right-1&space;)/\lambda,&space;&&space;if&space;\lambda&space;\neq&space;0\\&space;&log\left&space;(&space;y&space;\right&space;),&&space;if&space;\lambda&space;=0&space;\end{matrix}\right." target="_blank"><img src="https://latex.codecogs.com/gif.latex?t_{\lambda&space;}\left&space;(&space;y&space;\right&space;)=&space;\left\{\begin{matrix}&space;&\left&space;(&space;y^{^{\lambda&space;}}&space;\right-1&space;)/\lambda,&space;&&space;if&space;\lambda&space;\neq&space;0\\&space;&log\left&space;(&space;y&space;\right&space;),&&space;if&space;\lambda&space;=0&space;\end{matrix}\right." title="t_{\lambda }\left ( y \right )= \left\{\begin{matrix} &\left ( y^{^{\lambda }} \right-1 )/\lambda, & if \lambda \neq 0\\ &log\left ( y \right ),& if \lambda =0 \end{matrix}\right." /></a>
 
+$$
+t_{\lambda }\left ( y \right )= 
+\left\{\begin{matrix}
+ &( y^{^{\lambda }} \right-1 )/\lambda,  & if \lambda \neq 0\\
+ & log\left ( y \right ),& if \lambda =0
+\end{matrix}\right.
+$$
 
 
 
