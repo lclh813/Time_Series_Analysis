@@ -6,6 +6,10 @@
 
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/ARIMA.png"/></div>
 
+- ***p:*** The highest order in the ***autoregressive polynomial.*** Usually ***p*** is less than or equal to ***3.***
+- ***q:*** The highest order in the ***moving average polynomial.*** Usually ***q*** is less than or equal to ***3.***
+- ***d:*** The order of ***differencing.*** In most cases, ***d*** is either ***0, 1, or 2***. 
+
 ### 3.2. Plot the Time Series Data and Choose Proper Transfornations
 - To ***stabilize*** a series with nonconstant variance.
 - Tool: ```Box-Cox’s Transformation```
@@ -14,7 +18,6 @@
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/BoxCox.png"/></div>
 
 ### 3.3. Confirm a Necessary Degree of Differencing
-- In most cases, degree of differencing is either ***0, 1, or 2***. 
 ### 3.3.1. Ordinary Differencing
 - To make a non-stationary series ***stationary.***
 - Tool: ```ACF``` ```PACF```
