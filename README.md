@@ -24,7 +24,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/BoxCox.png"/></div>
 
-### Step 2. Confirm a Necessary Degree of Differencing
+### Step 2. Identfy the Order of ***d***
 ### Step 2.1. Ordinary Differencing
 - To make a non-stationary series ***stationary.***
 - Tool: ```ACF``` ```PACF```
@@ -40,16 +40,12 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/ArimaAcfPacf.png"/></div>
 <br>
-
-
-
-| Process     | ACF      | PACF  |
-| :---:       | :---:    | :---: |  
-| ***AR(p)***     | Tails off as exponential decay<br>or damped sine wave | Cuts off after lag ***p*** |
-| ***MA(q)***     | Cuts off after lag ***q*** | Tails off as exponential decay<br>or damped sine wave |  
-| ***ARMA(p,q)*** | Tails off after lag ***(q-p)*** | Tails off after lag ***(p-q)*** |  
   
-### 3.5. Determine the Coefficient of the Model
+### 3.5. Determine the Coefficients of the Model
+- If the coefficient estimate of the corresponding lag is ***less than twice its standard error*** away from 0, the correlation may not be significant enough and therefore should be eliminated from the linear regression.
+
+
+
 
 
 ### 3.2. 
