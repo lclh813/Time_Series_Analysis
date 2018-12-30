@@ -18,9 +18,9 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 - ***ARIMA*** stands for ***Autoregressive Integrated Moving Average Models*** and are, in theory, the most general models for forecasting a time series.
 - ARIMA Model and its parameters are illustrated as follows: 
 <br>
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/ArimaModel.png"/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/F_1_ArimaModel.png"/></div>
 <br>
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/ArimaParameter.png"/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/F_2_ArimaParameter.png"/></div>
 <br>
 
 - To identify a reasonably appropriate ARIMA model, ideally we need:      
@@ -33,7 +33,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 - Tool: R ```Package forecast``` ```BoxCox```
   - Box-Cox’s Transformation:
 
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/BoxCox.png"/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/F_3_BoxCox.png"/></div>
 
 ### Step 2. Identfy the Order of ***d***
 > **Step 2.1. Ordinary Differencing** 
@@ -60,7 +60,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 - Tool: R ```Package TSA``` ```acf``` ```pacf```
   - Characteristics of theoretical ACF and PACF for stationary process:
 
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/ArimaAcfPacf.png"/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/F_4_ArimaAcfPacf.png"/></div>
 <br>
 
 > **3.1.2. Determine the Coefficients of the Model**
@@ -108,17 +108,17 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 - Tool: R ```Package tseries``` ```Box.test```
 
 ## Part 4. Steps
-[Step 1. Plot the Time Series Data and Choose Proper Transformations](https://github.com/lclh813/Time_Series_Analysis/blob/master/1_Transformation.R)
+[Step 1. Plot the Time Series Data and Choose Proper Transformations](https://github.com/lclh813/Time_Series_Analysis/blob/master/C_1_Transformation.R)
 - According to ***Box-Cox’s Transformation,*** the original data should be applied an exponent of ***0.16*** to make its variance stabilized.
 - Compare the plot of the original data ***Zt*** to that of transformed data ***Zt_trans,*** the line of ***Zt_trans** is seen to be relatively stabilizing.
 
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/1_Transformation.png"/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/P_1_1_Transformation.png"/></div>
 
 **Step 2. Identfy the Order of** ***d***  
 [Step 2.1. Ordinary Differencing]()
 - The sample ACF decays very slowly, which suggests that differencing should be applied.
 
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/2_1_OrdinaryDifferencing.png"/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/P_1_2_TransformationAcfPacf.png"/></div>
 
 [Step 2.2. Seasonal Differencing]()
 
