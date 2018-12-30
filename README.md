@@ -13,6 +13,7 @@
 - To make a non-stationary series ***stationary.***
 - Tool: ```ACF``` ```PACF```
   - If the sample ***ACF*** decays very ***slowly*** and the sample ***PACF*** cuts off after ***lag 1***, then it indicates that differencing  is needed.
+  - In most cases, degree of differencing is either ***0, 1, or 2***.
 
 Compute and examine the sample ADF and the sample PACF of the transformed series.
 - 
