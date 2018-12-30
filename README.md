@@ -8,7 +8,9 @@
 - A series with ***nonconstant variance*** often needs a ***variance-stabilizing transformation*** and ```Box-Cox’s Transformation``` can be applied.
 - ***Box-Cox’s Transformation*** 
 
-<center>![image](https://github.com/lclh813/Time_Series_Analysis/blob/master/CodeCogsEqn.png)<center>
+![image](https://github.com/lclh813/Time_Series_Analysis/blob/master/CodeCogsEqn.png)
+<div align=center><img width="150" height="150" src="https://github.com/lclh813/Time_Series_Analysis/blob/master/CodeCogsEqn.png"/></div>
+
 
 
 
