@@ -37,6 +37,11 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
   
 ### Step 3. Identfy the Orders of ***p*** and ***q***
 - Characteristics of theoretical ACF and PACF for stationary process are illustrated as follows:
+<br>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/ArimaAcfPacf.png"/></div>
+<br>
+
+
 
 | Process     | ACF      | PACF  |
 | :---:       | :---:    | :---: |  
