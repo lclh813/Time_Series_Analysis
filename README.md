@@ -3,11 +3,10 @@
 ## Part 2. Data
 ## Part 3. Outline
 ### 3.1. Transformation
-- For some data, data after transformation can better fit a linear model.  
+- For some data, data after transformation can better fit a linear model.[1]  
 
-This is a guide on Markdown [Markdown][1].
 
-[1]: http://en.wikipedia.org/wiki/Markdown        "Markdown"
+[1]: "Markdown"
 
 
 
