@@ -2,7 +2,7 @@
 ## Part 1. Objective
 ## Part 2. Data
 ## Part 3. Outline
-### 3.1. General ARIMA(p,d,q) Model
+### 3.1. General ***ARIMA(p,d,q)*** Model
 
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/ARIMA.png"/></div>
 
