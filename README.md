@@ -6,9 +6,10 @@
 - The most commonly used transformations are ***variance-stabilizing transformations*** and ***differencing.*** 
 - Because ***variance-stabilizing transformations*** require ***non-negative*** values and ***differencing*** may create some ***negative*** values, ***variance-stabilizing transformations*** should always be applied ***before*** taking ***differencing.***
 - A series with ***nonconstant variance*** often needs a ***variance-stabilizing transformation*** and ```Box-Cox’s Transformation``` can be applied.
-- ***Box-Cox’s Transformation***  
+- ***Box-Cox’s Transformation*** 
 
-$$   f(x)=w^{T^t}_{ij}x_{x∈X_i}+b_{ij} $$
+ <img src="https://latex.codecogs.com/gif.latex?O_t=\text { Onset event at time bin } t " />
+
 
 
 
