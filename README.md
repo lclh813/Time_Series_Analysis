@@ -51,14 +51,14 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
   - If the sample ***ACF*** and the sample ***PACF*** suggest that there might be seasonal structure in the time series, then a seasonal differencing should be further applied.
   
 ### Step 3. Identfy the Orders of ***p*** and ***q***
-### Option 3.1. Interpret ACF and PACF Plots
+> **Option 3.1. Interpret ACF and PACF Plots**
 - If there still remains trend in the time series after transformations and differencing, an ***AR Model*** or an ***MA Model*** should be fitted.
 - Tool: R ```acf``` ```pacf```
   - Characteristics of theoretical ACF and PACF for stationary process:
 
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/ArimaAcfPacf.png"/></div>
 
-### Option 3.2. Compute ESACF
+> **Option 3.2. Compute ESACF**
 - For an ARMA(p,q) process, the ***vertex*** of the zero triangle in the asymptotic ESACF will be at ***(p,q)*** position.
 - Tool: R ```library(TSA)``` ```eacf```
 
