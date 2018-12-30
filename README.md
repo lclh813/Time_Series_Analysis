@@ -11,7 +11,6 @@
 ### 3.2. Plot the Time Series Data and Choose Proper Transformations
 - To ***stabilize*** a series with nonconstant variance.
 - Tool: ```Box-Cox’s Transformation```
-- ***Box-Cox’s Transformation*** 
 
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/BoxCox.png"/></div>
 
