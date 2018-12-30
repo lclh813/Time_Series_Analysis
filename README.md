@@ -7,7 +7,6 @@
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/ArimaModel.png"/></div>
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/ArimaParameter.png"/></div>
-<br>
 
 ### 3.2. Plot the Time Series Data and Choose Proper Transformations
 - To ***stabilize*** a series with nonconstant variance.
