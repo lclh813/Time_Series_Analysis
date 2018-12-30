@@ -5,7 +5,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 ## Part 2. Data
 ## Part 3. Outline
 ### 3.1. General ARIMA(p,d,q) Model 
-- ARIMA Model and its parameters are illustrated as follows: 
+- ARIMA Model (Autoregressive Integrated Moving Average Model) and its parameters are illustrated as follows: 
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/ArimaModel.png"/></div>
 <br>
