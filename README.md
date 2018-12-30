@@ -36,7 +36,13 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
   - If the sample ***ACF*** and the sample ***PACF*** suggest that there might be seasonal structure in the time series, then a seasonal differencing should be further applied.
   
 ### Step 3. Identfy the Orders of ***p*** and ***q***
-- 
+- Characteristics of theoretical ACF and PACF for stationary process are illustrated as follows:
+
+| Process     | ACF     | PACF |
+| :---:       | :---    | :--- |  
+| ***AR(p)***     | Tails off as exponential decay or<br>damped sine wave | Cuts off after lag ***p*** |
+| ***MA(q)***     | Cuts off after lag ***q*** | Tails off as exponential decay or<br>damped sine wave |  
+| ***ARMA(p,q)*** | Tails off after lag ***(q-p)*** | Tails off after lag ***(p-q)*** |  
   
 ### 3.5. Determine the Coefficient of the Model
 
@@ -47,6 +53,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 Professor Shao-Wei, Cheng
 Institute of Statistics, National Tsing Hua University
 http://www.stat.nthu.edu.tw/~swcheng/Teaching/stat5410/index.php
+https://people.duke.edu/~rnau/411arim.htm
 - 08. Mean Structure and Transformation
 
 
