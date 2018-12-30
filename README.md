@@ -6,6 +6,7 @@
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/ARIMA.png"/></div>
 <br>
+
 <div align=center>
 | Parameter | Definition                                       | General Rule     | 
 | :---:     | :---                                             | :---:            | 
@@ -13,6 +14,7 @@
 | ***q***   | Highest order in ***moving average polynomial*** | 0 ≦ ***q*** ≦ 3 | 
 | ***d***   | Order of ***differencing***                      | 0 ≦ ***q*** ≦ 2 | 
 </div>
+
 ### 3.2. Plot the Time Series Data and Choose Proper Transfornations
 - To ***stabilize*** a series with nonconstant variance.
 - Tool: ```Box-Cox’s Transformation```
