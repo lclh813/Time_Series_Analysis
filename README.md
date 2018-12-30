@@ -9,6 +9,7 @@
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/ArimaParameter.png"/></div>
 <br>
+
 - To identify a reasonably appropriate ARIMA model, ideally we need:      
   - ***Observations:*** A minimum of ***n=50*** observations.  
   - ***lag-k:*** The number of sample ***lag-k*** autocorrelations and autocorrelations to be calculated should be about ***n/4.*** 
