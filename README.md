@@ -52,9 +52,9 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 - Tool: R ```Package TSA``` ```acf``` ```pacf```
   - If the sample ***ACF*** and the sample ***PACF*** suggest that there might be seasonal structure in the time series, then a seasonal differencing should be further applied.
   
-### Step 3. Estimate the Orders of ***p*** and ***q***
-> **Option 3.1. Interpret ACF and PACF Plots**
-> **3.1.1. Compare with the Significance Range**
+### Step 3. Estimate the Orders of ***p*** and ***q***  
+> **Option 3.1. Interpret ACF and PACF Plots**  
+> **3.1.1. Compare with the Significance Range**  
 - If there still remains trend in the time series after transformations and differencing, an ***AR Model*** or an ***MA Model*** should be fitted.
 - Tool: R ```Package TSA``` ```acf``` ```pacf```
   - Characteristics of theoretical ACF and PACF for stationary process:
