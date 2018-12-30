@@ -52,48 +52,29 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
   - If the sample ***ACF*** and the sample ***PACF*** suggest that there might be seasonal structure in the time series, then a seasonal differencing should be further applied.
   
 ### Step 3. Identfy the Orders of ***p*** and ***q***
-> **Option 3.1. Interpret ACF and PACF Plots**
+> **Step 3.1. Interpret ACF and PACF Plots**
 - If there still remains trend in the time series after transformations and differencing, an ***AR Model*** or an ***MA Model*** should be fitted.
 - Tool: R ```Package TSA``` ```acf``` ```pacf```
   - Characteristics of theoretical ACF and PACF for stationary process:
 
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/ArimaAcfPacf.png"/></div>
 
-> **Option 3.2. Compute ESACF**
+> **Step 3.2. Determine the Coefficients of the Model**
+- If the coefficient estimate of the corresponding lag is ***less than twice of its standard error*** away from 0, it is implied that the autocorrelation at the given lag may not be significant and the elimination of the lag period should be considered.
+- Tool: ```Standard Error```
+
+> **Step 3.3. Compute ESACF**
 - For an ***ARMA(p,q)*** process, the ***vertex*** of the zero triangle in the asymptotic ESACF will be at ***(p,q)*** position.
 - Tool: R ```Package TSA``` ```eacf```
   - ***ESACF:***
     - Stands for ***Extended Sample Autocorrelation Function.*** 
     - A useful tool in model identification, particularly for a mixed ARMA Model.
 
-> **Option 3.3. Automatic ARIMA Modelling***
+> **Step 3.4. Automatic ARIMA Modelling**
 - Return best ARIMA model according to either AIC, AICc or BIC value.
 - Tool: R ```Package forecast``` ```auto.arima```
 
-### Step 4. Determine the Coefficients of the Model
-- If the coefficient estimate of the corresponding lag is ***less than twice of its standard error*** away from 0, it is implied that the autocorrelation at the given lag may not be significant and the elimination of the lag period should be considered.
-- Tool: ```Standard Error```
+> **Step 3.5. Model Selection by AIC and BIC**
+- Model with the ***lowest*** AIC or BIC value are being considered the **optimal.**
+- Tool: R ```aic``` ```BIC```
 
-
-
-
-
-
-
-
-### 3.2. 
-
-### Reference
-Professor Shao-Wei, Cheng
-Institute of Statistics, National Tsing Hua University
-http://www.stat.nthu.edu.tw/~swcheng/Teaching/stat5410/index.php
-https://people.duke.edu/~rnau/411arim.htm
-- 08. Mean Structure and Transformation
-
-
-
-
-## Part 4. Steps
-
-Step 1. Plot the time series data and choose proper transformations.  
-Step 2. Compute and examine the sample ACF and the sample of PACF of the original series.
