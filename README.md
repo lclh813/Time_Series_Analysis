@@ -58,7 +58,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
   - Characteristics of theoretical ACF and PACF for stationary process:
 
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/ArimaAcfPacf.png"/></div>
-
+<br>
 > **Step 3.2. Determine the Coefficients of the Model**
 - If the coefficient estimate of the corresponding lag is ***less than twice of its standard error*** away from 0, it is implied that the autocorrelation at the given lag may not be significant and the elimination of the lag period should be considered.
 - Tool: ```Standard Error```
