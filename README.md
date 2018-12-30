@@ -36,7 +36,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 ### Step 2. Identfy the Order of ***d***
 ### Step 2.1. Ordinary Differencing
 - To further confirm a necessary degree of differencing so that differenced series is ***stationary.***
-- Tool: R```acf``` ```pacf```
+- Tool: R ```acf``` ```pacf```
   - ***ACF:*** 
     - Stands for ***Autocorrelation Function.***
     - It allows us to incorporate the effect of past values into our model.
@@ -47,13 +47,13 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
   
 ### Step 2.2. Seasonal Differencing
 - To identify if there is a series of changes from one season to the next.
-- Tool: R```acf``` ```pacf```
+- Tool: R ```acf``` ```pacf```
   - If the sample ***ACF*** and the sample ***PACF*** suggest that there might be seasonal structure in the time series, then a seasonal differencing should be further applied.
   
 ### Step 3. Identfy the Orders of ***p*** and ***q***
 ### Option 3.1. Interpret ACF and PACF Plots
 - If there still remains trend in the time series after transformations and differencing, an ***AR Model*** or an ***MA Model*** should be fitted.
-- Tool: R```acf``` ```pacf```
+- Tool: R ```acf``` ```pacf```
   - Characteristics of theoretical ACF and PACF for stationary process:
 
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/ArimaAcfPacf.png"/></div>
