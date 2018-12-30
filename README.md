@@ -3,7 +3,7 @@
 ## Part 2. Data
 ## Part 3. Outline
 ### 3.1. Plot the time series data amd choose proper transfornations.
-- The most commonly used transformations are ***(1) variance-stabilizing transformations and (2) differencing.*** 
+- The most commonly used transformations are ***(1) variance-stabilizing transformations*** and ***(2) differencing.*** 
 - For some data, data after transformation can better fit a linear model.
 ### 3.2. 
 
