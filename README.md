@@ -5,9 +5,12 @@
 ### 3.1. Plot the time series data amd choose proper transfornations.
 - The most commonly used transformations are ***variance-stabilizing transformations*** and ***differencing.*** 
 - Because ***variance-stabilizing transformations*** require ***non-negative*** values and ***differencing*** may create some ***negative*** values, ***variance-stabilizing transformations*** should always be applied ***before*** taking ***differencing.***
-- A series with ***nonconstant variance*** often needs a ***logarithmic transformations*** and ```Box-Cox’s Power Transformation``` can be applied to stabilize the variance. 
+- A series with ***nonconstant variance*** often needs a ***variance-stabilizing transformation*** and ```Box-Cox’s Transformation``` can be applied.
+- ***Box-Cox’s Transformation***
+t_{\lambda }\left ( y \right )=log\left ( y \right ) ,\, \, \, if \, \, \lambda =  0
 
-- For some data, data after transformation can better fit a linear model.
+
+
 ### 3.2. 
 
 ### Reference
