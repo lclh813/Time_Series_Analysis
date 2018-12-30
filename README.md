@@ -10,7 +10,7 @@
 
 <center>
 <img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/CodeCogsEqn.png"/>
-</>
+</center>
 
 
 
