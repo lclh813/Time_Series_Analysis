@@ -54,7 +54,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
   
 ### Step 3. Estimate the Orders of ***p*** and ***q***  
 > **Option 3.1. Interpret ACF and PACF Plots**  
-> **3.1.1. Compare with the Significance Range**  
+> - **3.1.1. Compare with the Significance Range**  
 - If there still remains trend in the time series after transformations and differencing, an ***AR Model*** or an ***MA Model*** should be fitted.
 - Tool: R ```Package TSA``` ```acf``` ```pacf```
   - Characteristics of theoretical ACF and PACF for stationary process:
