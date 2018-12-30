@@ -28,14 +28,15 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 ### 3.3. Steps for Model Identification
 ### Step 1. Plot the Time Series Data and Choose Proper Transformations
 - A series with non-constant variance often needs a ***variance-stabilizing transformations.***
-- Tool: ```Box-Cox’s Transformation```
+- Tool: R ```library(forecast)``` ```BoxCox```
+  - Box-Cox’s Transformation:
 
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/BoxCox.png"/></div>
 
 ### Step 2. Identfy the Order of ***d***
 ### Step 2.1. Ordinary Differencing
 - To further confirm a necessary degree of differencing so that differenced series is ***stationary.***
-- Tool: ```ACF``` ```PACF```
+- Tool: R```acf``` ```pacf```
   - ***ACF:*** 
     - Stands for ***Autocorrelation Function.***
     - It allows us to incorporate the effect of past values into our model.
@@ -46,19 +47,22 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
   
 ### Step 2.2. Seasonal Differencing
 - To identify if there is a series of changes from one season to the next.
-- Tool: ```ACF``` ```PACF```
+- Tool: R```acf``` ```pacf```
   - If the sample ***ACF*** and the sample ***PACF*** suggest that there might be seasonal structure in the time series, then a seasonal differencing should be further applied.
   
 ### Step 3. Identfy the Orders of ***p*** and ***q***
 ### Option 3.1. Interpret ACF and PACF Plots
 - If there still remains trend in the time series after transformations and differencing, an ***AR Model*** or an ***MA Model*** should be fitted.
-- Tool: ```ACF``` ```PACF```
-  - Characteristics of theoretical ACF and PACF for stationary process
+- Tool: R```acf``` ```pacf```
+  - Characteristics of theoretical ACF and PACF for stationary process:
 
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/ArimaAcfPacf.png"/></div>
 
-### Option 3.2. Compute Extended Sample Autocorrelation Function (EACF) 
-- For an ARMA(p,q) process, the vertex of the zero triangle in the asymptotic EACF 
+### Option 3.2. Compute ESACF
+- For an ARMA(p,q) process, the ***vertex*** of the zero triangle in the asymptotic ESACF will be at ***(p,q)*** position.
+- Tool: R ```library(TSA)``` ```eacf```
+
+, which stands for ***Extended Sample Autocorrelation Function*** 
 
   
 ### Step 4. Determine the Coefficients of the Model
