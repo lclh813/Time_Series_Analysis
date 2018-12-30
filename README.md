@@ -53,7 +53,8 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
   - If the sample ***ACF*** and the sample ***PACF*** suggest that there might be seasonal structure in the time series, then a seasonal differencing should be further applied.
   
 ### Step 3. Estimate the Orders of ***p*** and ***q***  
-> **Option 3.1. Interpret ACF and PACF Plots** 
+> **Option 3.1. Interpret ACF and PACF Plots**
+
 > **3.1.1. Compare with the Significance Range**  
 - If there still remains trend in the time series after transformations and differencing, an ***AR Model*** or an ***MA Model*** should be fitted.
 - Tool: R ```Package TSA``` ```acf``` ```pacf```
@@ -87,12 +88,14 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 
 ### Step 5. Residual Analysis
 > **Step 5.1. Stationary Test**
+
 > **Option 5.1.1. Interpret the Plot**
 - Tool: R ```plot``` 
 > **Option 5.1.2. Augmented Dickey–Fuller (ADF) Test** 
 - Null hypothesis: A unit root is present in a time series sample, namely the series is ***not stationary.***
 - Tool: R ```Package tseries``` ```adf.test```
-> **Step 5.2. Normality Test**  
+> **Step 5.2. Normality Test**
+
 > **Option 5.2.1. Interpret the Plot**  
 - Tool: R ```qqnorm``` ```qqline``` 
 > **Option 5.2.2. Shapiro Test**  
