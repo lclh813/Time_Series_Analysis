@@ -52,11 +52,10 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 ### Step 3. Identfy the Orders of ***p*** and ***q***
 ### Option 3.1. Interpret ACF and PACF Plots
 - If there still remains trend in the time series after transformations and differencing, an ***AR Model*** or an ***MA Model*** should be fitted.
-- Characteristics of theoretical ACF and PACF for stationary process are illustrated as follows:
+- Tool: ```ACF``` ```PACF```
+  - Characteristics of theoretical ACF and PACF for stationary process
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/ArimaAcfPacf.png"/></div>
-
-- Tool: ```ACF``` ```PACF```
 
 ### Option 3.2. Compute Extended Sample Autocorrelation Function (EACF) 
 - For an ARMA(p,q) process, the vertex of the zero triangle in the asymptotic EACF 
