@@ -111,11 +111,11 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 - According to ***Box-Cox’s Transformation,*** the original data should be applied an exponent of ***0.16*** to make its variance stabilized.
 - Compare the plot of the original data ***Zt*** to that of transformed data ***Zt_trans,*** the line of ***Zt_trans** is seen to be relatively stabilizing.
 
-<div align=center><img src=""/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/1_Transformation.png"/></div>
 
 Step 2. Identfy the Order of ***d***
 [Step 2.1. Ordinary Differencing]()
 
-<div align=center><img src=""/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/2_1_OrdinaryDifferencing.png"/></div>
 [Step 2.2. Seasonal Differencing]()
 
