@@ -2,30 +2,32 @@
 ## Part 1. Objective
 ## Part 2. Data
 ## Part 3. Outline
-### 3.1. ARIMA(p,d,q) Model
+### 3.1. General ARIMA(p,d,q) Model
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/ArimaModel.png"/></div>
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/ArimaParameter.png"/></div>
 
-### 3.2. Plot the Time Series Data and Choose Proper Transformations
+### 3.2. Steps for Model Identification
+### Step 1. Plot the Time Series Data and Choose Proper Transformations
 - To ***stabilize*** a series with nonconstant variance.
 - Tool: ```Box-Cox’s Transformation```
 
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/BoxCox.png"/></div>
 
-### 3.3. Confirm a Necessary Degree of Differencing
-### 3.3.1. Ordinary Differencing
+### Step 2. Confirm a Necessary Degree of Differencing
+### Step 2.1. Ordinary Differencing
 - To make a non-stationary series ***stationary.***
 - Tool: ```ACF``` ```PACF```
   - If the sample ***ACF*** decays very ***slowly*** and the sample ***PACF*** cuts off after ***lag 1***, then it indicates that differencing  is needed.
   
-### 3.3.2. Seasonal Differencing
+### Step 2.2. Seasonal Differencing
 - To identify if there is a series of changes from one season to the next.
 - Tool: ```ACF``` ```PACF```
   - If the sample ***ACF*** and the sample ***PACF*** suggest that there might be seasonal structure in the time series, then a seasonal differencing should be further applied.
   
-### 3.4. Identfy the Orders of ***p*** and ***q***
+### Step 3. Identfy the Orders of ***p*** and ***q***
+- 
   
 ### 3.5. Determine the Coefficient of the Model
 
