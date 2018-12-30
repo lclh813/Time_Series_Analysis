@@ -7,19 +7,11 @@
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/ARIMA.png"/></div>
 <br>
 
-| Parameter | Definition                                       | Order | 
-| :---:     | :---                                             | :---: | 
-| ***p***   | Highest order in ***autoregressive polynomial*** | 0 ≦ ***P*** ≦ 3    | 
-| ***q***   | Highest order in ***moving average polynomial*** |       | 
-| ***d***   | Order of ***differencing***                      |     1 | 
-
-
-- ***p:*** The highest order in the ***autoregressive polynomial.*** 
-  - Usually ***p*** is less than or equal to ***3.***
-- ***q:*** The highest order in the ***moving average polynomial.*** 
-  - Usually ***q*** is less than or equal to ***3.***
-- ***d:*** The order of ***differencing.*** 
-  - In most cases, ***d*** is either ***0, 1, or 2***. 
+| Parameter | Definition                                       | General Rule     | 
+| :---:     | :---                                             | :---:            | 
+| ***p***   | Highest order in ***autoregressive polynomial*** | 0 ≦ ***P*** ≦ 3 | 
+| ***q***   | Highest order in ***moving average polynomial*** | 0 ≦ ***q*** ≦ 3 | 
+| ***d***   | Order of ***differencing***                      | 0 ≦ ***q*** ≦ 2 | 
 
 ### 3.2. Plot the Time Series Data and Choose Proper Transfornations
 - To ***stabilize*** a series with nonconstant variance.
