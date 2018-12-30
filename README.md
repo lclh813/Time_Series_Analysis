@@ -54,7 +54,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
   
 ### Step 3. Estimate the Orders of ***p*** and ***q***  
 > **Option 3.1. Interpret ACF and PACF Plots** 
->> **3.1.1. Compare with the Significance Range**  
+> **3.1.1. Compare with the Significance Range**  
 - If there still remains trend in the time series after transformations and differencing, an ***AR Model*** or an ***MA Model*** should be fitted.
 - Tool: R ```Package TSA``` ```acf``` ```pacf```
   - Characteristics of theoretical ACF and PACF for stationary process:
@@ -62,11 +62,11 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/ArimaAcfPacf.png"/></div>
 <br>
 
->> **3.1.2. Determine the Coefficients of the Model**
+> **3.1.2. Determine the Coefficients of the Model**
 - If the coefficient estimate of the corresponding lag is ***less than twice of its standard error*** away from zero, it is implied that the autocorrelation at the given lag may not be significant and the elimination of the lag period should be considered.
 - Tool: ```Standard Error```
 
->> **3.1.3. Grid Search**
+> **3.1.3. Grid Search**
 - Iteratively explore different combinations of parameters based on the detection of ***3.1.1.*** 
 - Tool: R ```Package forecast``` ```arima```
 
@@ -87,15 +87,15 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 
 ### Step 5. Residual Analysis
 > **Step 5.1. Stationary Test**
->> **Option 5.1.1. Interpret the Plot**
+> **Option 5.1.1. Interpret the Plot**
 - Tool: R ```plot``` 
->> **Option 5.1.2. Augmented Dickey–Fuller (ADF) Test** 
+> **Option 5.1.2. Augmented Dickey–Fuller (ADF) Test** 
 - Null hypothesis: A unit root is present in a time series sample, namely the series is ***not stationary.***
 - Tool: R ```Package tseries``` ```adf.test```
 > **Step 5.2. Normality Test**  
->> **Option 5.2.1. Interpret the Plot**  
+> **Option 5.2.1. Interpret the Plot**  
 - Tool: R ```qqnorm``` ```qqline``` 
->> **Option 5.2.2. Shapiro Test**  
+> **Option 5.2.2. Shapiro Test**  
 - Null hypothesis: A set of observations is ***normally distributed.***
 - Tool: R ```shapiro.test```
 > **Step 5.3. Autocorrelation Test**
