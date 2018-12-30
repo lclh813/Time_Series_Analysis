@@ -1,6 +1,6 @@
 # Time Series Analysis
 ## Notice
-It is possible that GitHub fails to display Jupyter Notebooks. Should such circumstances arise, please refer to Part 4. Steps listed below for code samples.
+It is possible that GitHub fails to display Jupyter Notebooks. Should such circumstances arise, please refer to ***Part 4. Steps*** listed below for code samples.
 ## Part 1. Objective
 ## Part 2. Data
 ## Part 3. Outline
@@ -14,7 +14,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 
 - To identify a reasonably appropriate ARIMA model, ideally we need:      
   - ***Observations:*** A minimum of ***n=50*** observations.  
-  - ***lag-k:*** The number of sample ***lag-k*** autocorrelations and autocorrelations to be calculated should be about ***n/4.*** 
+  - ***lag-k:*** The number of sample lag-k autocorrelations and autocorrelations to be calculated should be about ***n/4.*** 
 
 ### 3.2. Steps for Model Identification
 ### Step 1. Plot the Time Series Data and Choose Proper Transformations
