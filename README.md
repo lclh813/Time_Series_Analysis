@@ -8,13 +8,7 @@
 - A series with ***nonconstant variance*** often needs a ***variance-stabilizing transformation*** and ```Box-Cox’s Transformation``` can be applied.
 - ***Box-Cox’s Transformation*** 
 
-![](http://latex.codecogs.com/gif.latex?\begin{center}
-t_{\lambda }\left ( y \right )= 
-\left\{\begin{matrix}
- &( y^{^{\lambda }} \right-1 )/\lambda,  & if \lambda \neq 0\\
- & log\left ( y \right ),& if \lambda =0
-\end{matrix}\right.
-\end{center})
+![image](https://github.com/lclh813/Time_Series_Analysis/blob/master/CodeCogsEqn.png)
 
 
 
