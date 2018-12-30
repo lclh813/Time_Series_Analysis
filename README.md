@@ -7,7 +7,12 @@
 - Because ***variance-stabilizing transformations*** require ***non-negative*** values and ***differencing*** may create some ***negative*** values, ***variance-stabilizing transformations*** should always be applied ***before*** taking ***differencing.***
 - A series with ***nonconstant variance*** often needs a ***variance-stabilizing transformation*** and ```Box-Cox’s Transformation``` can be applied.
 - ***Box-Cox’s Transformation***
-t_{\lambda }\left ( y \right )=log\left ( y \right ) ,\, \, \, if \, \, \lambda =  0
+$$
+y=\begin{cases}
+-x,\quad x\leq 0 \\\\
+x,\quad x>0
+\end{cases}
+$$
 
 
 
