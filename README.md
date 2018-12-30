@@ -5,12 +5,13 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 ## Part 2. Data
 ## Part 3. Outline
 ### 3.1. Reference
-- [A Guide to Time Series Forecasting with ARIMA in Python 3](https://www.digitalocean.com/community/tutorials/a-guide-to-time-series-forecasting-with-arima-in-python-3)
-  - by ***Thomas Vincent***
 - [NTHU STAT 5410 - Linear Models](http://www.stat.nthu.edu.tw/~swcheng/Teaching/stat5410/index.php)
   - by ***Shao-Wei Cheng***, Institute of Statistics, National Tsing Hua University
 - [Time Series Analysis: Univariate and Multivariate Methods](https://www.amazon.com/Time-Analysis-Univariate-Multivariate-Methods/dp/0321322169) 
   - by ***William W.S. Wei***
+- [A Guide to Time Series Forecasting with ARIMA in Python 3](https://www.digitalocean.com/community/tutorials/a-guide-to-time-series-forecasting-with-arima-in-python-3)
+  - by ***Thomas Vincent***
+- [R Documentation](https://www.rdocumentation.org/)
 
 ### 3.2. General ***ARIMA(p,d,q)*** Model
 - ***ARIMA*** stands for ***Autoregressive Integrated Moving Average Models*** and are, in theory, the most general models for forecasting a time series.
@@ -59,11 +60,11 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/ArimaAcfPacf.png"/></div>
 
 > **Option 3.2. Compute ESACF**
-- For an ARMA(p,q) process, the ***vertex*** of the zero triangle in the asymptotic ESACF will be at ***(p,q)*** position.
+- For an ***ARMA(p,q)*** process, the ***vertex*** of the zero triangle in the asymptotic ESACF will be at ***(p,q)*** position.
 - Tool: R ```library(TSA)``` ```eacf```
-
-, which stands for ***Extended Sample Autocorrelation Function*** 
-
+  - ***ESACF:***
+    - Stands for ***Extended Sample Autocorrelation Function.*** 
+    - A useful tool in model identification, particularly for a mixed ARMA Model.
   
 ### Step 4. Determine the Coefficients of the Model
 - If the coefficient estimate of the corresponding lag is ***less than twice of its standard error*** away from 0, it is implied that the autocorrelation at the given lag may not be significant and the elimination of the lag period should be considered.
