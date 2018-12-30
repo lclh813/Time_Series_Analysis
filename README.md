@@ -4,8 +4,13 @@
 ## Part 3. Outline
 ### 3.1. General ***ARIMA(p,d,q)*** Model
 <br>
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/ARIMA.png"/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/ArimaModel.png"/></div>
 <br>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/ArimaParameter.png"/></div>
+<br>
+
+
+
 
 | Parameter | Definition                                       | General Rule     | 
 | :---:     | :---                                             | :---:            | 
