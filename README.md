@@ -107,7 +107,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 - Tool: R ```Package tseries``` ```Box.test```
 
 ## Part 4. Steps
-[Step 1. Plot the Time Series Data and Choose Proper Transformations]()
+[Step 1. Plot the Time Series Data and Choose Proper Transformations](https://github.com/lclh813/Time_Series_Analysis/blob/master/1_Transformation.R)
 - According to ***Box-Cox’s Transformation,*** original data should be applied an exponent of ***0.16*** to make its variance stabilized.
 - Compare the plot of the original data ***Zt*** and that of transformed data ***Zt_trans,** the line of ***Zt_trans** is relatively stabilizing.
 
