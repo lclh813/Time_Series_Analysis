@@ -16,11 +16,11 @@ t_{\lambda }\left ( y \right )=
 \end{matrix}\right.
 \end{center}
 
-\begin{aligned}
+\begin{equation*}
 \dot{x} & = \sigma(y-x) \\
 \dot{y} & = \rho x - y - xz \\
 \dot{z} & = -\beta z + xy
-\end{aligned}
+\end{equation*}
 
 
 
