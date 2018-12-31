@@ -104,7 +104,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 > **Step 5.3. Autocorrelation Test**  
 
 > **Ljung-Box Q (LBQ) Test**
-- Null hypothesis: The first k autocorrelations are jointly zero, namely the data values are random and ***independent*** up to lag k.
+- Null hypothesis: The first k autocorrelations are jointly zero, namely the data values are ***independent*** up to lag k.
 - Tool: R ```Package tseries``` ```Box.test```
 
 ## Part 4. Steps
