@@ -133,8 +133,9 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/P_3_1_1_M1ResidualAcfPacf.png"/></div>
 
 - **Coefficients and Standard Errors of Model 1**
-
+<br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/P_3_1_2_M1CoefficientSe.png"/></div>
+<br>
 
 **3.1.2. Determine the Coefficients of the Model**
 
