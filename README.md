@@ -100,7 +100,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 - Tool: R ```Package tseries``` ```Box.test```
 
 ## Part 4. Steps
-[Step 1. Plot the Time Series Data and Choose Proper Transformations](https://github.com/lclh813/Time_Series_Analysis/blob/master/C_1_Transformation.R)
+[**Step 1. Plot the Time Series Data and Choose Proper Transformations**](https://github.com/lclh813/Time_Series_Analysis/blob/master/C_1_Transformation.R)
 - According to ***Box-Cox’s Transformation,*** the original data should be applied an exponent of ***0.16*** to make its variance stabilized.
 - Compare the plot of the original data ***Zt*** to that of the transformed data ***Yt,*** the line of ***Yt*** is seen to be relatively stabilizing.
 
@@ -111,12 +111,12 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/P_1_2_TransformationAcfPacf.png"/></div>
 
 **Step 2. Identfy the Order of** ***d***  
-[Step 2.1. Ordinary Differencing](https://github.com/lclh813/Time_Series_Analysis/blob/master/C_2_1_OrdinaryDiff.R)
+[**Step 2.1. Ordinary Differencing**](https://github.com/lclh813/Time_Series_Analysis/blob/master/C_2_1_OrdinaryDiff.R)
 - After ordinary differencing, the sample ACF indicates that there is a seasonal trend with peaks occurring at lags of 4, which suggests that seasonal differencing should be applied.
 
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/P_2_1_OrdinaryDiffAcfPacf.png"/></div>
 
-[Step 2.2. Seasonal Differencing](https://github.com/lclh813/Time_Series_Analysis/blob/master/C_2_2_SeasonalDiff.R)
+[**Step 2.2. Seasonal Differencing**](https://github.com/lclh813/Time_Series_Analysis/blob/master/C_2_2_SeasonalDiff.R)
 
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/P_2_2_SeasonalDiffAcfPacf.png"/></div>
 
@@ -127,9 +127,12 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 - After seasonal differencing, the series still remains non-stationary with values of both ACF and PACF exceeding twice of their respective standard errors at lag 4, ***MA(4), AR(4), or ARMA(4,4)*** should be further fitted. 
 - Since the sample ACF stays relatively stationary in comparison with the sample PACF and ACF at lag 4 does not exceed twice of its standard error significantly, the following parameter estimation will be focused on ***AR(4).***
 
-> **Model 1. SARIMA (4,1,0) x (0,1,0),4**  
-- ACF and PACF of Model 1's Residuals**  
-- Coefficients and Standard Errors of Model 1**
+> [**Model 1. SARIMA (4,1,0) x (0,1,0),4**]()  
+- **ACF and PACF of Model 1's Residuals**  
+
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/P_3_1_M1ResidualAcfPacf.png"/></div>
+
+- **Coefficients and Standard Errors of Model 1**
 
 |                 | ar1    | ar2    | ar3    | ar4     |
 |:---             | ---:   | ---:   | ---:   | ---:    |
