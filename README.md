@@ -118,9 +118,9 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/P_2_1_OrdinaryDiffAcfPacf.png"/></div>
 
-[Step 2.2. Seasonal Differencing]()
+[Step 2.2. Seasonal Differencing](https://github.com/lclh813/Time_Series_Analysis/blob/master/C_2_2_SeasonalDiff.R)
 
-
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/P_2_2_SeasonalDiffAcfPacf.png"/></div>
 
 ## Part 5. Reference
 - [NTHU STAT 5410 - Linear Models](http://www.stat.nthu.edu.tw/~swcheng/Teaching/stat5410/index.php)
