@@ -143,8 +143,9 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Plot/P_3_2_1_M2ResidualAcfPacf.png"/></div>
 
 - **Coefficients and Standard Errors of Model 2**
-
+<br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Plot/P_3_2_2_M2CoefficientSe.png"/></div>
+<br>
 
 > **3.1.3. Grid Search**  
 > [**Model 3. SARIMA (1,1,4) x (0,1,0,4)**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_3_3_M3.R)
