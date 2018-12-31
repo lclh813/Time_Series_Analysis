@@ -72,7 +72,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 - Return best ARIMA model according to either AIC or BIC value.
 - Tool: R ```Package forecast``` ```auto.arima```
 
-### Step 4. Identify the Orders of ***p*** and ***q***
+### Step 4. Model Selection
 - Model with the ***lowest*** AIC or BIC value are being considered the optimal.
 - Tool: R ```aic``` ```BIC```
 
@@ -178,6 +178,11 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 - **Coefficients and Standard Errors of Model 5**
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Plot/P_3_3_2_M5CoefficientSe.png"/></div>
+<br>
+
+[**Step 4. Model Selection**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_4_ModelSelection.R)
+<br>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Plot/P_4_ModelSelection.png"/></div>
 <br>
 
 ## Part 5. Reference
