@@ -124,7 +124,8 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 
 **Step 3. Estimate the Orders of** ***p*** **and** ***q***  
 **Option 3.1. Interpret ACF and PACF Plots**  
-> **3.1.1. Compare with the Significance Range**  
+> **3.1.1. Compare with the Significance Range**
+
 > [**Model 1. SARIMA (4,1,4) x (0,1,0,4)**]()  
 - **ACF and PACF of Model 1's Residuals**  
 
