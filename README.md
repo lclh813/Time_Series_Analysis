@@ -16,10 +16,8 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 - To identify a reasonably appropriate ARIMA model, ideally we need:      
   - ***Observations:*** A minimum of ***n=50*** observations.  
   - ***lag-k:*** The number of sample lag-k autocorrelations and autocorrelations to be calculated should be about ***n/4.*** 
-  
-### 3.2. Overview of Functions
 
-### 3.3. Steps for Model Identification
+### 3.2. Steps for Model Identification
 ### Step 1. Plot the Time Series Data and Choose Proper Transformations
 - A series with non-constant variance often needs a ***variance-stabilizing transformations.***
 - Tool: R ```Package forecast``` ```BoxCox```
@@ -129,12 +127,14 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 - After seasonal differencing, the series still remains non-stationary with values of both ACF and PACF exceeding twice of their respective standard errors at lag 4, ***MA(4), AR(4), or ARMA(4,4)*** should be further fitted. 
 - Since the sample ACF stays relatively stationary in comparison with the sample PACF and ACF at lag 4 does not exceed twice of its standard error significantly, the following parameter estimation will be focused on ***AR(4).***
 
-> **Model 1. SARIMA (4,1,0) x (0,1,0)_4**
+> **Model 1. SARIMA (4,1,0) x (0,1,0)_4**  
+> **ACF and PACF of Model 1's Residuals**  
+> **Coefficients and Standard Errors of Model 1**
 
-|              | ar1    | ar2    | ar3    | ar4     |
-|:---          | ---:   | ---:   | ---:   | ---:    |
-| Coefficients | 0.3190 | 0.0219 | 0.1006 | -0.4253 |
-| s.e.         | 0.1141 | 0.1254 | 0.1233 | 0.1148  |
+|                 | ar1    | ar2    | ar3    | ar4     |
+|:---             | ---:   | ---:   | ---:   | ---:    |
+| Coefficients    | 0.3190 | 0.0219 | 0.1006 | -0.4253 |
+| Standard Errors | 0.1141 | 0.1254 | 0.1233 | 0.1148  |
 
 
 
