@@ -130,16 +130,11 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 > [**Model 1. SARIMA (4,1,0) x (0,1,0,4)**]()  
 - **ACF and PACF of Model 1's Residuals**  
 
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/P_3_1_M1ResidualAcfPacf.png"/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/P_3_1_1_M1ResidualAcfPacf.png"/></div>
 
 - **Coefficients and Standard Errors of Model 1**
 
-|                 | ar1    | ar2    | ar3    | ar4     |
-|:---             | ---:   | ---:   | ---:   | ---:    |
-| Coefficients    | 0.3190 | 0.0219 | 0.1006 | -0.4253 |
-| Standard Errors | 0.1141 | 0.1254 | 0.1233 | 0.1148  |
-
-
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/P_3_1_2_M1CoefficientSe.png"/></div>
 
 **3.1.2. Determine the Coefficients of the Model**
 
