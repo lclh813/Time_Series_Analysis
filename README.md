@@ -131,11 +131,13 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/P_3_1_1_M1ResidualAcfPacf.png"/></div>
 
 - **Coefficients and Standard Errors of Model 1**
+  - Since the coefficients of ***AR(2), AR(3), AR(4), MA(1), MA(2), MA(3)*** are less than twice of their respective standard errors, Model 1 can be modified by setting coefficients of above-mentioned as ***zero,*** which leads to ***Model 2. SARIMA (1,1,4) x (0,1,0,4) with coefficients of MA(1), MA(2) and MA(3) as 0***
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/P_3_1_2_M1CoefficientSe.png"/></div>
 <br>
 
-**3.1.2. Determine the Coefficients of the Model**
+> **3.1.2. Determine the Coefficients of the Model**
+>
 
 
 ## Part 5. Reference
