@@ -122,7 +122,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/P_2_2_SeasonalDiffAcfPacf.png"/></div>
 
-**Step 3. Estimate the Orders of** ***p*** **and** ***q***
+**Step 3. Estimate the Orders of** ***p*** **and** ***q***  
 **Option 3.1. Interpret ACF and PACF Plots**
 
 - After seasonal differencing, if the series still remains non-stationary with values of both ACF and PACF exceeding twice of their respective standard errors at lag 4, ***MA(4), AR(4), or ARMA(4,4)*** should be further fitted. 
