@@ -125,7 +125,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 **Step 3. Estimate the Orders of** ***p*** **and** ***q***  
 **Option 3.1. Interpret ACF and PACF Plots**  
 > **3.1.1. Compare with the Significance Range**  
-> [**Model 1. SARIMA (4,1,4) x (0,1,0,4)**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_3_1_M1.R)  
+> [**Model 1. SARIMA (4,1,4) x (0,1,0,4)**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_3_1_1_M1.R)  
 - **ACF and PACF of Model 1's Residuals**  
 
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Plot/P_3_1_1_1_M1ResidualAcfPacf.png"/></div>
@@ -137,7 +137,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 <br>
 
 > **3.1.2. Determine the Coefficients of the Model**  
-> [**Model 2. SARIMA (1,1,4) x (0,1,0,4) with coefficients of MA(1), MA(2), MA(3) being set as zero**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_3_2_M2.R)
+> [**Model 2. SARIMA (1,1,4) x (0,1,0,4) with coefficients of MA(1), MA(2), MA(3) being set as zero**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_3_1_2_M2.R)
 - **ACF and PACF of Model 2's Residuals** 
 
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Plot/P_3_1_2_1_M2ResidualAcfPacf.png"/></div>
@@ -148,14 +148,26 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 <br>
 
 > **3.1.3. Grid Search**  
-> [**Model 3. SARIMA (1,1,4) x (0,1,0,4)**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_3_3_M3.R)
+> [**Model 3. SARIMA (1,1,4) x (0,1,0,4)**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_3_1_3_M3.R)
 - **ACF and PACF of Model 3's Residuals** 
 
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Plot/P_3_1_3_1_M3ResidualAcfPacf.png"/></div>
 
 - **Coefficients and Standard Errors of Model 3**
-
+<br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Plot/P_3_1_3_2_M3CoefficientSe.png"/></div>
+<br>
+
+**Option 3.2. Compute ESACF**  
+> [**Model 4. SARIMA (1,1,4) x (0,1,0,4)**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_3_2_M4.R)
+- **ACF and PACF of Model 4's Residuals** 
+
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Plot/P_3_2_1_M4ResidualAcfPacf.png"/></div>
+
+- **Coefficients and Standard Errors of Model 4**
+<br>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Plot/P_3_2_2_M4CoefficientSe.png"/></div>
+<br>
 
 ## Part 5. Reference
 - [NTHU STAT 5410 - Linear Models](http://www.stat.nthu.edu.tw/~swcheng/Teaching/stat5410/index.php)
