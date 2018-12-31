@@ -95,7 +95,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 - Null hypothesis: A unit root is present in a time series sample, namely the series is ***not stationary.***
 - Tool: R ```Package tseries``` ```adf.test```
 
-#### Step 5.2. Normality Test**
+#### Step 5.2. Normality Test
 
 > **Option 5.2.1. Interpret the Plot**  
 - Tool: R ```qqnorm``` ```qqline``` 
