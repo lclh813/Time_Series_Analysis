@@ -47,13 +47,13 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
     - This allows us to set the error of our model as a linear combination of the error values observed at previous time points in the past.
   - If the sample ***ACF*** decays very ***slowly*** and the sample ***PACF*** cuts off after ***lag 1***, then it indicates that differencing is needed.
   
-> **Step 2.2. Seasonal Differencing**
+#### Step 2.2. Seasonal Differencing
 - To identify if there is a series of changes from one season to the next.
 - Tool: R ```Package TSA``` ```acf``` ```pacf```
   - If the sample ***ACF*** and the sample ***PACF*** suggest that there might be seasonal structure in the time series, then a seasonal differencing should be further applied.
   
 ### Step 3. Estimate the Orders of ***p*** and ***q***  
-> **Option 3.1. Interpret ACF and PACF Plots**
+#### Option 3.1. Interpret ACF and PACF Plots
 
 > **3.1.1. Compare with the Significance Range**  
 - If there still remains trend in the time series after transformations and differencing, an ***AR Model*** or an ***MA Model*** should be fitted.
@@ -71,14 +71,14 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 - Iteratively explore different combinations of parameters based on the detection of ***3.1.1.*** 
 - Tool: R ```Package forecast``` ```arima```
 
-> **Option 3.2. Compute ESACF**
+#### Option 3.2. Compute ESACF
 - For an ***ARMA(p,q)*** process, the ***vertex*** of the zero triangle in the asymptotic ESACF will be at ***(p,q)*** position.
 - Tool: R ```Package TSA``` ```eacf```
   - ***ESACF:***
     - Stands for ***Extended Sample Autocorrelation Function.*** 
     - A useful tool in model identification, particularly for a mixed ARMA Model.
 
-> **Option 3.3. Automatic ARIMA Modelling**
+#### Option 3.3. Automatic ARIMA Modelling
 - Return best ARIMA model according to either AIC or BIC value.
 - Tool: R ```Package forecast``` ```auto.arima```
 
@@ -87,21 +87,23 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 - Tool: R ```aic``` ```BIC```
 
 ### Step 5. Residual Analysis
-> **Step 5.1. Stationary Test**
+#### Step 5.1. Stationary Test
 
 > **Option 5.1.1. Interpret the Plot**
 - Tool: R ```plot``` 
 > **Option 5.1.2. Augmented Dickey–Fuller (ADF) Test** 
 - Null hypothesis: A unit root is present in a time series sample, namely the series is ***not stationary.***
 - Tool: R ```Package tseries``` ```adf.test```
-> **Step 5.2. Normality Test**
+
+#### Step 5.2. Normality Test**
 
 > **Option 5.2.1. Interpret the Plot**  
 - Tool: R ```qqnorm``` ```qqline``` 
 > **Option 5.2.2. Shapiro Test**  
 - Null hypothesis: A set of observations is ***normally distributed.***
 - Tool: R ```shapiro.test```
-> **Step 5.3. Autocorrelation Test**  
+
+#### Step 5.3. Autocorrelation Test  
 
 > **Ljung-Box Q (LBQ) Test**
 - Null hypothesis: The first k autocorrelations are jointly zero, namely the data values are ***independent*** up to lag k.
