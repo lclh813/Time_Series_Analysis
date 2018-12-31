@@ -118,14 +118,13 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 
 [**Step 2.2. Seasonal Differencing**](https://github.com/lclh813/Time_Series_Analysis/blob/master/C_2_2_SeasonalDiff.R)
 
+- After seasonal differencing, the series still remains non-stationary with values of both ACF and PACF exceeding twice of their respective standard errors at lag 4, ***ARMA(4,4)*** should be further fitted. 
+
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/P_2_2_SeasonalDiffAcfPacf.png"/></div>
 
 **Step 3. Estimate the Orders of** ***p*** **and** ***q***  
 **Option 3.1. Interpret ACF and PACF Plots**  
 > **3.1.1. Compare with the Significance Range**
-
-- After seasonal differencing, the series still remains non-stationary with values of both ACF and PACF exceeding twice of their respective standard errors at lag 4, ***ARMA(4,4)*** should be further fitted. 
-
 > [**Model 1. SARIMA (4,1,4) x (0,1,0,4)**]()  
 - **ACF and PACF of Model 1's Residuals**  
 
