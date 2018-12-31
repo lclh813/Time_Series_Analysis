@@ -166,7 +166,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 
 - **Coefficients and Standard Errors of Model 4**
 <br>
-<div align=center><img src=""/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Plot/P_3_2_2_M4CoefficientSe.png"/></div>
 <br>
 
 **Option 3.3. Automatic ARIMA Modelling**
