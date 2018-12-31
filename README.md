@@ -169,6 +169,17 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Plot/P_3_2_2_M4CoefficientSe.png"/></div>
 <br>
 
+**Option 3.3. Automatic ARIMA Modelling**
+> [**Model 5. SARIMA (2,1,1) x (0,1,0,4)**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_3_3_M5.R)
+- **ACF and PACF of Model 5's Residuals** 
+
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Plot/P_3_3_1_M5ResidualAcfPacf.png"/></div>
+
+- **Coefficients and Standard Errors of Model 5**
+<br>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Plot/P_3_3_2_M5CoefficientSe.png"/></div>
+<br>
+
 ## Part 5. Reference
 - [NTHU STAT 5410 - Linear Models](http://www.stat.nthu.edu.tw/~swcheng/Teaching/stat5410/index.php)
   - by ***Shao-Wei Cheng***, Institute of Statistics, National Tsing Hua University
