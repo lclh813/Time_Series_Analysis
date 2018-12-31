@@ -48,7 +48,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 #### Option 3.1. Interpret ACF and PACF Plots
 
 > **3.1.1. Compare with the Significance Range**  
-- If there still remains trend in the time series after transformations and differencing, an ***AR Model*** or an ***MA Model*** should be fitted.
+- If time series still remains non-stationary after transformations and differencing, an ***AR Model*** or an ***MA Model*** should be fitted.
 - Tool: R ```Package TSA``` ```acf``` ```pacf```
   - Characteristics of theoretical ACF and PACF for stationary process:
 
@@ -121,6 +121,9 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 [Step 2.2. Seasonal Differencing](https://github.com/lclh813/Time_Series_Analysis/blob/master/C_2_2_SeasonalDiff.R)
 
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/P_2_2_SeasonalDiffAcfPacf.png"/></div>
+
+- After seasonal differencing, if the series still remains non-stationary with values of both ACF and PACF exceeding twice of their respective standard errors at lag 4, ***MA(4), AR(4), or ARMA(4,4)*** should be further fitted. 
+- Since the sample ACF stays relatively stationary in comparison with the sample PACF; in addition, ACF at lag 4 does not exceed twice of its standard error significantly, the following parameter estimation will be focused on ***AR(4)***.
 
 ## Part 5. Reference
 - [NTHU STAT 5410 - Linear Models](http://www.stat.nthu.edu.tw/~swcheng/Teaching/stat5410/index.php)
