@@ -8,9 +8,9 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 - ***ARIMA*** stands for ***Autoregressive Integrated Moving Average Models*** and are, in theory, the most general models for forecasting a time series.
 - ARIMA Model and its parameters are illustrated as follows: 
 <br>
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/F_1_ArimaModel.png"/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Formula/F_1_ArimaModel.png"/></div>
 <br>
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/F_2_ArimaParameter.png"/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Formula/F_2_ArimaParameter.png"/></div>
 <br>
 
 - To identify a reasonably appropriate ARIMA model, ideally we need:      
@@ -23,7 +23,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 - Tool: R ```Package forecast``` ```BoxCox```
   - Box-Cox’s Transformation:
 
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/F_3_BoxCox.png"/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Formula/F_3_BoxCox.png"/></div>
 
 ### Step 2. Identfy the Order of ***d***
 #### Step 2.1. Ordinary Differencing 
@@ -50,7 +50,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 - Tool: R ```Package TSA``` ```acf``` ```pacf```
   - Characteristics of theoretical ACF and PACF for stationary process:
 
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/F_4_ArimaAcfPacf.png"/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Formula/F_4_ArimaAcfPacf.png"/></div>
 <br>
 
 > **3.1.2. Determine the Coefficients of the Model**
@@ -100,51 +100,51 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 - Tool: R ```Package tseries``` ```Box.test```
 
 ## Part 4. Steps
-[**Step 1. Plot the Time Series Data and Choose Proper Transformations**](https://github.com/lclh813/Time_Series_Analysis/blob/master/C_1_Transformation.R)
+[**Step 1. Plot the Time Series Data and Choose Proper Transformations**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_1_Transformation.R)
 - According to ***Box-Cox’s Transformation,*** the original data should be applied an exponent of ***0.16*** to make its variance stabilized.
 - Compare the plot of the original data ***Zt*** to that of the transformed data ***Yt,*** the line of ***Yt*** is seen to be relatively stabilizing.
 
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/P_1_1_Transformation.png"/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Plot/P_1_1_Transformation.png"/></div>
 
 - After variance stabilizing transformation, the sample ACF decays very slowly, which suggests that ordinary differencing should be applied.
 
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/P_1_2_TransformationAcfPacf.png"/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Plot/P_1_2_TransformationAcfPacf.png"/></div>
 
 **Step 2. Identfy the Order of** ***d***  
-[**Step 2.1. Ordinary Differencing**](https://github.com/lclh813/Time_Series_Analysis/blob/master/C_2_1_OrdinaryDiff.R)
+[**Step 2.1. Ordinary Differencing**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_2_1_OrdinaryDiff.R)
 - After ordinary differencing, the sample ACF indicates that there is a seasonal trend with peaks occurring at lags of 4, which suggests that seasonal differencing should be applied.
 
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/P_2_1_OrdinaryDiffAcfPacf.png"/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Plot/P_2_1_OrdinaryDiffAcfPacf.png"/></div>
 
-[**Step 2.2. Seasonal Differencing**](https://github.com/lclh813/Time_Series_Analysis/blob/master/C_2_2_SeasonalDiff.R)
+[**Step 2.2. Seasonal Differencing**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_2_2_SeasonalDiff.R)
 
 - After seasonal differencing, the series still remains non-stationary with values of both ACF and PACF exceeding twice of their respective standard errors at lag 4, ***ARMA(4,4)*** should be further fitted. 
 
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/P_2_2_SeasonalDiffAcfPacf.png"/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Plot/P_2_2_SeasonalDiffAcfPacf.png"/></div>
 
 **Step 3. Estimate the Orders of** ***p*** **and** ***q***  
 **Option 3.1. Interpret ACF and PACF Plots**  
 > **3.1.1. Compare with the Significance Range**  
-> [**Model 1. SARIMA (4,1,4) x (0,1,0,4)**](https://github.com/lclh813/Time_Series_Analysis/blob/master/C_3_1_M1.R)  
+> [**Model 1. SARIMA (4,1,4) x (0,1,0,4)**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_3_1_M1.R)  
 - **ACF and PACF of Model 1's Residuals**  
 
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/P_3_1_1_M1ResidualAcfPacf.png"/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Plot/P_3_1_1_M1ResidualAcfPacf.png"/></div>
 
 - **Coefficients and Standard Errors of Model 1**
   - Since the coefficients of ***AR(2), AR(3), AR(4), MA(1), MA(2), MA(3)*** are less than twice of their respective standard errors, Model 1 can be modified by setting coefficients of above-mentioned as ***zero,*** which leads to ***Model 2. SARIMA (1,1,4) x (0,1,0,4).***
 <br>
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/P_3_1_2_M1CoefficientSe.png"/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Plot/P_3_1_2_M1CoefficientSe.png"/></div>
 <br>
 
 > **3.1.2. Determine the Coefficients of the Model**  
-> [**Model 2. SARIMA (1,1,4) x (0,1,0,4)**](https://github.com/lclh813/Time_Series_Analysis/blob/master/C_3_2_M2.R)
+> [**Model 2. SARIMA (1,1,4) x (0,1,0,4)**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_3_2_M2.R)
 - **ACF and PACF of Model 2's Residuals** 
 
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/P_3_2_1_M2ResidualAcfPacf.png"/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Plot/P_3_2_1_M2ResidualAcfPacf.png"/></div>
 
 - **Coefficients and Standard Errors of Model 2**
 
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/P_3_2_2_M2CoefficientSe.png"/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Plot/P_3_2_2_M2CoefficientSe.png"/></div>
 
 ## Part 5. Reference
 - [NTHU STAT 5410 - Linear Models](http://www.stat.nthu.edu.tw/~swcheng/Teaching/stat5410/index.php)
