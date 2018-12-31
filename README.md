@@ -125,14 +125,14 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 **Step 3. Estimate the Orders of** ***p*** **and** ***q***  
 **Option 3.1. Interpret ACF and PACF Plots**  
 > **3.1.1. Compare with the Significance Range**  
-> [**Model 1. SARIMA (4,1,4) x (0,1,0,4)**]()  
+> [**Model 1. SARIMA (4,1,4) x (0,1,0,4)**](https://github.com/lclh813/Time_Series_Analysis/blob/master/C_3_1_M1.R)  
 - **ACF and PACF of Model 1's Residuals**  
 
-<div align=center><img src=""/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/P_3_1_1_M1ResidualAcfPacf.png"/></div>
 
 - **Coefficients and Standard Errors of Model 1**
 <br>
-<div align=center><img src=""/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/P_3_1_2_M1CoefficientSe.png"/></div>
 <br>
 
 **3.1.2. Determine the Coefficients of the Model**
