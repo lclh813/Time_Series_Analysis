@@ -114,7 +114,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 
 **Step 2. Identfy the Order of** ***d***  
 [Step 2.1. Ordinary Differencing]()
-- After ordinary differencing, the sample ACF indicates that there is a seasonal trend with peaks occurring at lags of 4.
+- After ordinary differencing, the sample ACF indicates that there is a seasonal trend with peaks occurring at lags of 4, which suggests that seasonal differencing should be applied.
 
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/P_2_1_OrdinaryDiffAcfPacf.png"/></div>
 
