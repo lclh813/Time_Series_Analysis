@@ -137,7 +137,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 <br>
 
 > **3.1.2. Determine the Coefficients of the Model**  
-> [**Model 2. SARIMA (1,1,4) x (0,1,0,4)**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_3_2_M2.R)
+> [**Model 2. SARIMA (1,1,4) x (0,1,0,4) with coefficients of MA(1), MA(2), MA(3) being set as zero.**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_3_2_M2.R)
 - **ACF and PACF of Model 2's Residuals** 
 
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Plot/P_3_2_1_M2ResidualAcfPacf.png"/></div>
@@ -145,6 +145,14 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 - **Coefficients and Standard Errors of Model 2**
 
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Plot/P_3_2_2_M2CoefficientSe.png"/></div>
+
+> **3.1.3. Grid Search**  
+> [**Model 3. SARIMA (1,1,4) x (0,1,0,4)**]()
+- **ACF and PACF of Model 3's Residuals** 
+
+<div align=center><img src=""/></div>
+
+- **Coefficients and Standard Errors of Model 3**
 
 ## Part 5. Reference
 - [NTHU STAT 5410 - Linear Models](http://www.stat.nthu.edu.tw/~swcheng/Teaching/stat5410/index.php)
