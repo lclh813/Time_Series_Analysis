@@ -4,10 +4,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 ## Part 1. Objective
 ## Part 2. Data
 ## Part 3. Outline
-### 3.1. Reference
-
-
-### 3.2. General ***ARIMA(p,d,q)*** Model
+### 3.1. General ***ARIMA(p,d,q)*** Model
 - ***ARIMA*** stands for ***Autoregressive Integrated Moving Average Models*** and are, in theory, the most general models for forecasting a time series.
 - ARIMA Model and its parameters are illustrated as follows: 
 <br>
@@ -19,6 +16,8 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 - To identify a reasonably appropriate ARIMA model, ideally we need:      
   - ***Observations:*** A minimum of ***n=50*** observations.  
   - ***lag-k:*** The number of sample lag-k autocorrelations and autocorrelations to be calculated should be about ***n/4.*** 
+  
+### 3.2. Overview of Functions
 
 ### 3.3. Steps for Model Identification
 ### Step 1. Plot the Time Series Data and Choose Proper Transformations
@@ -109,15 +108,19 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/P_1_1_Transformation.png"/></div>
 
-**Step 2. Identfy the Order of** ***d***  
-[Step 2.1. Ordinary Differencing]()
-- The sample ACF decays very slowly, which suggests that ordinary differencing should be applied.
+- After variance stabilizing transformation, the sample ACF decays very slowly, which suggests that ordinary differencing should be applied.
 
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/P_1_2_TransformationAcfPacf.png"/></div>
 
-- After ordinary differencing, ACF  
+**Step 2. Identfy the Order of** ***d***  
+[Step 2.1. Ordinary Differencing]()
+- After ordinary differencing, the sample ACF indicates that there is a seasonal trend with peaks occurring at lags of 4.
+
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/P_2_1_OrdinaryDiffAcfPacf.png"/></div>
 
 [Step 2.2. Seasonal Differencing]()
+
+
 
 ## Part 5. Reference
 - [NTHU STAT 5410 - Linear Models](http://www.stat.nthu.edu.tw/~swcheng/Teaching/stat5410/index.php)
