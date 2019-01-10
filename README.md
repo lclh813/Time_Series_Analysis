@@ -25,7 +25,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Formula/F_3_BoxCox.png"/></div>
 
-### Step 2. Identfy the Order of ***d***
+### Step 2. Identify the Order of ***d***
 #### Step 2.1. Ordinary Differencing 
 - To further confirm a necessary degree of differencing so that differenced series is ***stationary.***
 - Tool: R ```Package TSA``` ```acf``` ```pacf```
