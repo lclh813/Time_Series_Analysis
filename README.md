@@ -18,7 +18,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
   - ***lag-k:*** The number of sample lag-k autocorrelations and autocorrelations to be calculated should be about ***n/4.*** 
 
 ### 3.2. Steps for Model Identification
-### Step 1. Plot the Time Series Data and Choose Proper Transformations
+### Step 1. Choose Proper Transformations
 - A series with non-constant variance often needs a ***variance-stabilizing transformations.***
 - Tool: R ```Package forecast``` ```BoxCox```
   - Box-Cox’s Transformation:
