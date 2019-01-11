@@ -26,7 +26,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Formula/F_3_BoxCox.png"/></div>
 
 ### Step 2. Identify the Order of ***d***
-#### Step 2.1. Ordinary Differencing 
+#### Option 2.1. Ordinary Differencing 
 - To further confirm a necessary degree of differencing so that differenced series is ***stationary.***
 - Tool: R ```Package TSA``` ```acf``` ```pacf```
   - ***ACF:*** 
@@ -37,7 +37,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
     - This allows us to set the error of our model as a linear combination of the error values observed at previous time points in the past.
   - If the sample ***ACF*** decays very ***slowly*** and the sample ***PACF*** cuts off after ***lag 1***, then it indicates that differencing is needed.
   
-#### Step 2.2. Seasonal Differencing
+#### Option 2.2. Seasonal Differencing
 - To identify if there is a series of changes from one season to the next.
 - Tool: R ```Package TSA``` ```acf``` ```pacf```
   - If the sample ***ACF*** and the sample ***PACF*** suggest that there might be seasonal structure in the time series, then a seasonal differencing should be further applied.
@@ -53,7 +53,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Formula/F_4_ArimaAcfPacf.png"/></div>
 <br>
 
-> **3.1.2. Determine the Coefficients of the Model**
+> **3.1.2. Determine Coefficients of the Model**
 - If the coefficient estimate of the corresponding lag is ***less than twice of its standard error*** away from zero, it is implied that the autocorrelation at the given lag may not be statistically significant and the elimination of the lag period should be considered.
 - Tool: ```Standard Error```
 
