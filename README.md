@@ -45,7 +45,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 ### Step 3. Estimate the Orders of ***p*** and ***q***  
 #### Option 3.1. Interpret ACF and PACF Plots
 
-> **3.1.1. Compare with the Significance Range**  
+> **3.1.1.1. Compare with the Significance Range**  
 - If time series still remains non-stationary after transformations and differencing, an ***AR Model*** or an ***MA Model*** should be fitted.
 - Tool: R ```Package TSA``` ```acf``` ```pacf```
   - Characteristics of theoretical ACF and PACF for stationary process:
@@ -53,11 +53,11 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Formula/F_4_ArimaAcfPacf.png"/></div>
 <br>
 
-> **3.1.2. Determine Coefficients of the Model**
+> **3.1.1.2. Determine Coefficients of the Model**
 - If the coefficient estimate of the corresponding lag is ***less than twice of its standard error*** away from zero, it is implied that the autocorrelation at the given lag may not be statistically significant and the elimination of the lag period should be considered.
 - Tool: ```Standard Error```
 
-> **3.1.3. Grid Search**
+> **3.1.2. Grid Search**
 - Iteratively explore different combinations of parameters based on the detection of ***3.1.1.*** 
 - Tool: R ```Package forecast``` ```arima```
 
