@@ -101,9 +101,9 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 
 ## Part 4. Steps
 > [Complete Code: R]
-
+<br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_0_FlowChart.png"/></div>
-
+<br>
 [**Step 1. Plot the Time Series Data and Choose Proper Transformations**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_1_Transformation.R)
 - According to ***Box-Cox’s Transformation,*** the original data should be applied an exponent of ***0.16*** to make its variance stabilized.
 - Compare the plot of the original data ***Zt*** to that of the transformed data ***Yt,*** the line of ***Yt*** is seen to be relatively stabilizing.
