@@ -142,7 +142,8 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Plot/P_3_1_1_2_M1CoefficientSe.png"/></div>
 <br>
- 
+
+
 > [**Model 2. (1,1,4) x (0,1,0)_4**] 
 > **with coefficients of MA(1), MA(2), MA(3) being set as zero**(https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_3_1_2_M2.R)
 
