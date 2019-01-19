@@ -131,7 +131,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 > **3.1.2. Determine the Coefficients of the Model**
 - Since the coefficients of ***AR(2), AR(3), AR(4), MA(1), MA(2), MA(3)*** are less than twice of their respective standard errors, Model 1 can be modified by setting coefficients of above-mentioned as ***zero,*** which leads to ***Model 2. (1,1,4) x (0,1,0)_4 with coefficients of MA(1), MA(2), MA(3) being set as zero.***
 
-> [**Model 2. (1,1,4) x (0,1,0)_4 with coefficients of MA(1), MA(2), MA(3) being set as zero**] (https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_3_1_2_M2.R)
+> [**Model 2. (1,1,4) x (0,1,0)_4 with coefficients of MA(1), MA(2), MA(3) being set as zero**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_3_1_2_M2.R)
 
 > **3.1.3. Grid Search**  
 > [**Model 3. (1,1,4) x (0,1,0)_4**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_3_1_3_M3.R)
