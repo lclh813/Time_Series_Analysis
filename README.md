@@ -113,11 +113,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 - According to ***Box-Cox’s Transformation,*** the original data should be applied an exponent of ***0.16*** to make its variance stabilized.
 - Compare the plot of the original data ***Zt*** to that of the transformed data ***Yt,*** the line of ***Yt*** is seen to be relatively stabilizing.
 
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Plot/P_1_1_Transformation.png"/></div>
-
 - After variance stabilizing transformation, the sample ACF decays very slowly, which suggests that ordinary differencing should be applied.
-
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Plot/P_1_2_TransformationAcfPacf.png"/></div>
 
 **Step 2. Identfy the Order of** ***d***  
 [**Step 2.1. Ordinary Differencing**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_2_1_OrdinaryDiff.R)
@@ -129,8 +125,6 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 
 - After seasonal differencing, the series still remains non-stationary with values of both ACF and PACF exceeding twice of their respective standard errors at lag 4, ***ARMA(4,4)*** should be further fitted. 
 
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Plot/P_2_2_SeasonalDiffAcfPacf.png"/></div>
-
 **Step 3. Estimate the Orders of** ***p*** **and** ***q***  
 **Option 3.1. Interpret ACF and PACF Plots**  
 > **3.1.1. Compare with the Significance Range**  
@@ -138,11 +132,6 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 
 > **3.1.2. Determine the Coefficients of the Model**
 - Since the coefficients of ***AR(2), AR(3), AR(4), MA(1), MA(2), MA(3)*** are less than twice of their respective standard errors, Model 1 can be modified by setting coefficients of above-mentioned as ***zero,*** which leads to ***Model 2. (1,1,4) x (0,1,0)_4 with coefficients of MA(1), MA(2), MA(3) being set as zero.***
-
-<br>
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Plot/P_3_1_1_2_M1CoefficientSe.png"/></div>
-<br>
-
 
 > [**Model 2. (1,1,4) x (0,1,0)_4**] 
 > **with coefficients of MA(1), MA(2), MA(3) being set as zero**(https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_3_1_2_M2.R)
@@ -157,9 +146,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 > [**Model 5. (2,1,1) x (0,1,0)_4**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_3_3_M5.R)
 
 [**Step 4. Model Selection**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_4_ModelSelection.R)
-<br>
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Plot/P_4_ModelSelection.png"/></div>
-<br>
+
 
 ## Part 5. Reference
 - [NTHU STAT 5410 - Linear Models](http://www.stat.nthu.edu.tw/~swcheng/Teaching/stat5410/index.php)
