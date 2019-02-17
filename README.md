@@ -225,9 +225,11 @@ for (p in c(0:5)) {
 which(a == min(a))
 which(b == min(b))
 ```
+
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_3_1_3_Model3.png"/></div>
 <br>
+
 ```
 m3 <- arima(Yt, order=c(1,1,4), seasonal=list(order=c(0,1,0), period=4))
 acf(m3$residuals,lag=20); pacf(m3$residuals,lag=20)
