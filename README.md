@@ -244,7 +244,7 @@ acf(m3$residuals, lag=20); pacf(m3$residuals, lag=20)
 ```
 
 #### Option 3.2. Compute ESACF
-- When ***ar.max*** and ***ma.max*** are larger than ***16***, there pops up an error message suggesting that the matrix may become singular without invertible matrix to perform further algebraic computation.
+- When ***ar.max*** and ***ma.max*** are larger than ***17***, there pops up an error message suggesting that the matrix may become singular without invertible matrix to perform further algebraic computation.
 > **Model 4. (1,1,4) x (0,1,0)_4**
 - The ***vertex*** of the zero triangle is at ***(2,3)*** position.
 - Since the input is the differenced data already, the result of ***(2,3)*** should be considered as ***(2,1,3) x (0,1,0)_4.***
@@ -256,6 +256,45 @@ eacf(dYt_s, ar.max=16, ma.max=16)
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_3_2_Model4.png"/></div>
 <br>
 
+**Option 3.3. Automatic ARIMA Modelling**
+- Since the input is the differenced data already, the result of (1,0,0) should be considered as (1,1,0) x (0,1,0)_4.
+```
+auto.arima(dYt_s)
+```
+
+<br>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_3_3_Model5.png"/></div>
+<br>
+
+### Step 4.  Model Selection
+#### Option 1. Create table T1 to facilitate the comparison of AIC and BIC.
+```
+T1 <- data.frame(matrix(c(BIC(m1),BIC(m2),BIC(m3),BIC(m4),BIC(m5),
+                          m1$aic,m2$aic,m3$aic,m4$aic,m5$aic),
+                          ncol=5, nrow=2, byrow=T))
+colnames(T1)=c("Model 1", "Model 2", "Model 3", "Model 4", "Model 5")
+rownames(T1)=c("BIC", "AIC")
+```
+
+<br>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_4_1_Table1.png"/></div>
+<br>
+
+```
+a1 <- rank(c(BIC(m1),BIC(m2),BIC(m3),BIC(m4),BIC(m5)))
+a2 <- rank(c(m1$aic,m2$aic,m3$aic,m4$aic,m5$aic))
+# Combine dataframes by row.
+T2 <- data.frame(rbind(a1,a2))
+colnames(T2)=c("Model 1", "Model 2", "Model 3", "Model 4", "Model 5")
+rownames(T2)=c("BIC Rank","AIC Rank")
+```
+
+<br>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_4_2_Table2.png"/></div>
+<br>
+
+
+
 ==================================================================================================
 
 
@@ -264,19 +303,6 @@ eacf(dYt_s, ar.max=16, ma.max=16)
 
 
 
-++++++++++
-
-
-
-
-
-
-
-
-
-
-**Option 3.3. Automatic ARIMA Modelling**
-> [**Model 5. (2,1,1) x (0,1,0)_4**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_3_3_M5.R)
 
 [**Step 4. Model Selection**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_4_ModelSelection.R)
 
