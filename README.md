@@ -100,9 +100,9 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 - Tool: R ```Package tseries``` ```Box.test```
 
 ## Part 4. Steps
-> [***Complete Code: R***]
+### [Complete Code: R]
 
-> ***Flow Chart of the Analysis Process***
+### Flow Chart of the Analysis Process
 - Time series analysis of the given data was performed in accordance with the flow of ***red arrows***.
 
 <br>
@@ -110,17 +110,17 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 <br>
 
 ### Preparation
-> Import Library.
+- Import Library.
 ```
 library(forecast)
 library(TSA)
 library(tseries)
 ```
-> Import Datasets.
+- Import Datasets.
 ```
 data <- read.table("G:\\data.csv")
 ```
-> Declare data to be analyzed as variable Zt.
+- Declare data to be analyzed as variable Zt.
 ```
 Zt <- data$V1
 ```
