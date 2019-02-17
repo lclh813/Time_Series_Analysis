@@ -160,13 +160,21 @@ acf(dYt,lag=30); pacf(dYt,lag=30)
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_2_1_dYtACFPACF.png"/></div>
 
 #### Step 2.2. Seasonal Differencing
-- Also, since the original data was recorded on a ***monthly*** basis, dividing data into ***12 groups*** which represent ***January to December*** respectively can help us gain more insights into seasonal patterns.
+- Also, since the original data was recorded on a ***monthly*** basis, dividing data into ***12*** groups which represent ***January to December*** respectively can help us gain more insights into seasonal patterns.
 ```
 time1 <- c(rep(1:12,6), c(1:4))
 par(mfrow=c(1,1))
 monthplot(Yt, phase=time1, xlab="month", ylab="Yt")
 ```
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_2_2_1_12Groups.png"/></div>
+
+- It can be further observed that ***January to April***, ***May to August***, ***September to December*** can be classified as ***3*** different groups. 
+'''
+time2 <- c(rep(rep(c(1:3),each=4),6), c(1,1,1,1))
+par(mfrow=c(1,1))
+monthplot(Yt,phase=time2, ylab="Yt")
+'''
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_2_2_2_3Groups.png"/></div>
 
 
 
