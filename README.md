@@ -110,13 +110,13 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 <br>
 
 ### Preparation
-- Import Library.
+- Import library.
 ```
 library(forecast)
 library(TSA)
 library(tseries)
 ```
-- Import Data.
+- Import data.
 ```
 data <- read.table("G:\\data.csv")
 ```
