@@ -132,11 +132,26 @@ Zt <- data$V1
 lambda <- round(BoxCox.lambda(Zt, method="guerrero"), digits=2)
 ```
 - According to ***Box-Cox’s Transformation,*** the original data should be applied an exponent of ***0.16*** to make its variance stabilized.
-- Compare the plot of the original data ***Zt*** to that of the transformed data ***Yt,*** the line of ***Yt*** is seen to be relatively stabilizing.
-- After variance stabilizing transformation, the sample ACF decays very slowly, which suggests that ordinary differencing should be applied.
+```
+Yt <- (abs(Zt))^(lambda)
+```
+- Compare the plot of the original data ***Zt*** to that of the transformed data ***Yt,*** the line of ***Yt*** is seen to be relatively stabilizing with smaller volatility.
+```
+par(mfrow = c(1,2))
+ts.plot(Zt); ts.plot(Yt)
+```
+<br>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_1_ZtYt.png"/></div>
+<br>
+
+- After variance stabilizing transformation, the sample ***ACF*** decays very slowly, which suggests that ***1st difference*** should be applied.
+```
+par(mfrow=c(1,2))
+acf(Yt,lag=25); pacf(Yt,lag=25)
+```
 
 ### Step 2. Identfy the Order of ***d***  
-[**Step 2.1. Ordinary Differencing**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_2_1_OrdinaryDiff.R)
+#### Step 2.1. Ordinary Differencing
 - After ordinary differencing, the sample ACF indicates that there is a seasonal trend with peaks occurring at lags of 4, which suggests that seasonal differencing should be applied.
 
 [**Step 2.2. Seasonal Differencing**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_2_2_SeasonalDiff.R)
