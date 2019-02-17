@@ -188,21 +188,32 @@ acf(dYt_s, lag=25); pacf(dYt_s, lag=25)
 #### Option 3.1. Interpret ACF and PACF Plots
 > **3.1.1. Compare with the Significance Range** 
 - Significance range is indicated with ***blue dotted lines*** which represent positive and negative values of ***standard error*** respectively.
-> **Model 1. (4,1,4) x (0,1,0)_4**
+> ***Model 1. (4,1,4) x (0,1,0)_4***
 - After seasonal differencing, the series still remains non-stationary with values of both ***ACF*** and ***PACF*** exceeding significance range at ***lag 4***; therefore, ***ARMA(4,4)*** should be further fitted.
 ```
 m1 <- arima(Yt, order=c(4,1,4), seasonal=list(order=c(0,1,0), period=4))
 acf(m1$residuals, lag=20); pacf(m1$residuals, lag=20)
-m1
 ```
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_3_1_1_Model1.png"/></div>
 <br>
 
 > **3.1.2. Determine Coefficients of the Model**
-- Since absolute values of coefficients of ar1, ar2 and ar3 are less than ***twice*** of their respective standard errors, ***Model 1*** can be modified by setting coefficients of ***ar1, ar2*** and ***ar3*** as ***zero***.
-> **Model 2. (4,1,0) x (0,1,0)_4 with coefficients of ar1 and ar3 being set as zero***
+- Since coefficients of ***AR(2), AR(3), AR(4), MA(1), MA(2), MA(3)*** are less than ***twice*** of their respective ***standard errors***, ***Model 1*** can be modified by setting coefficients of above-mentioned as ***zero***.
+> **Model 2. (1,1,4) x (0,1,0)_4 with coefficients of MA(1), MA(2), MA(3) being set as zero**
 ```
+m2 <- arima(Yt, order=c(1,1,4), fixed= c(NA,0,0,0,NA), seasonal=list(order=c(0,1,0),period=4))
+acf(m2$residuals, lag=20); pacf(m2$residuals, lag=20)
+```
+<br>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_3_1_2_Model2.png"/></div>
+<br>
+
+
+- Since absolute values of coefficients of ar1, ar2 and ar3 are less than ***twice*** of their respective standard errors, ***Model 1*** can be modified by setting coefficients of ***ar1, ar2*** and ***ar3*** as ***zero***.
+> ***Model 2. (4,1,0) x (0,1,0)_4 with coefficients of ar1 and ar3 being set as zero***
+```
+
 
 ```
 
