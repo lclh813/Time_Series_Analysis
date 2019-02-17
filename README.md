@@ -126,12 +126,12 @@ Zt <- data$V1[-c(73:76)]
 ```
 
 ### Step 1. Choose Proper Transformations
-- In addtion to the defaulted method of Box-Cox Transforamtion ***"guerrero,"*** there is another transformation method ***"loglik."***
-- Since lambda calculated by "loglik" is not quite different from that calculated by "guerrero," lambda calculated by "guerrero" will be applied.
+- Other than the defaulted method of Box-Cox Transforamtion ***"guerrero,"*** there is another transformation method ***"loglik."***
+- Since lambda calculated by "loglik" is not much different from that calculated by "guerrero," lambda calculated by "guerrero" will be applied.
 ```
-lambda <- round(BoxCox.lambda(Zt, method="guerrero"), digits=2)
+lambda <- BoxCox.lambda(Zt,method = "guerrero")
 ```
-- According to ***Box-Cox’s Transformation,*** the original data should be applied an exponent of ***0.16*** to make its variance stabilized.
+- According to Box-Cox’s Transformation, the original data should be applied an exponent of ***0.16*** to make its variance stabilized.
 ```
 Yt <- (abs(Zt))^(lambda)
 ```
