@@ -199,7 +199,7 @@ m1
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_3_1_1_Model1.png"/></div>
 <br>
 
-> **3.1.2. Determine the Coefficients of the Model**
+> **3.1.2. Determine Coefficients of the Model**
 - Since absolute values of coefficients of ar1, ar2 and ar3 are less than ***twice*** of their respective standard errors, ***Model 1*** can be modified by setting coefficients of ***ar1, ar2*** and ***ar3*** as ***zero***.
 > **Model 2. (4,1,0) x (0,1,0)_4 with coefficients of ar1 and ar3 being set as zero***
 ```
