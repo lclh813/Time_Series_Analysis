@@ -135,7 +135,7 @@ lambda <- BoxCox.lambda(Zt, method="guerrero")
 ```
 Yt <- (abs(Zt))^(lambda)
 ```
-- Compare the plot of the original data ***Zt*** to that of the transformed data ***Yt,*** line of ***Yt*** is seen to be relatively stabilizing with smaller volatility.
+- Compare the plot of the original data ***Zt*** to that of the transformed data ***Yt,*** and the line of ***Yt*** is seen to be relatively stabilizing with smaller volatility.
 ```
 par(mfrow = c(1,2))
 ts.plot(Zt); ts.plot(Yt)
