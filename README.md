@@ -108,11 +108,30 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_0_FlowChart.png"/></div>
 <br>
+**Preparation**
+> Import Library.
+```
+library(forecast)
+library(TSA)
+library(tseries)
+```
+> Import Datasets.
+```
+data <- read.table("G:\\data.csv")
+```
+> Declare data to be analyzed as variable Zt.
+```
+Zt <- data$V1
+```
 
-[**Step 1. Choose Proper Transformations**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_1_Transformation.R)
+**Step 1. Choose Proper Transformations**
+- Tool: Box-Cox Transforamtion with method defaulted as "guerrero."
+- There is another transformation method "loglik," but since lambda calculated by "loglik" is not quite different from that calculated by "guerrero," lambda calculated by "guerrero" will be applied.
+```
+lambda <- round(BoxCox.lambda(Zt, method="guerrero"), digits=2)
+```
 - According to ***Box-Cox’s Transformation,*** the original data should be applied an exponent of ***0.16*** to make its variance stabilized.
 - Compare the plot of the original data ***Zt*** to that of the transformed data ***Yt,*** the line of ***Yt*** is seen to be relatively stabilizing.
-
 - After variance stabilizing transformation, the sample ACF decays very slowly, which suggests that ordinary differencing should be applied.
 
 **Step 2. Identfy the Order of** ***d***  
