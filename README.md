@@ -129,13 +129,13 @@ Zt <- data$V1[-c(73:76)]
 - Other than the defaulted method of Box-Cox Transforamtion ***"guerrero,"*** there is another transformation method ***"loglik."***
 - Since lambda calculated by "loglik" is not much different from that calculated by "guerrero," lambda calculated by "guerrero" will be applied.
 ```
-lambda <- BoxCox.lambda(Zt,method = "guerrero")
+lambda <- BoxCox.lambda(Zt, method="guerrero")
 ```
-- According to Box-Cox’s Transformation, the original data should be applied an exponent of ***0.16*** to make its variance stabilized.
+- According to Box-Cox’s Transformation, the original data should be applied an exponent of ***0.23*** to make its variance stabilized.
 ```
 Yt <- (abs(Zt))^(lambda)
 ```
-- Compare the plot of the original data ***Zt*** to that of the transformed data ***Yt,*** the line of ***Yt*** is seen to be relatively stabilizing with smaller volatility.
+- Compare the plot of the original data ***Zt*** to that of the transformed data ***Yt,*** line of ***Yt*** is seen to be relatively stabilizing with smaller volatility.
 ```
 par(mfrow = c(1,2))
 ts.plot(Zt); ts.plot(Yt)
