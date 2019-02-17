@@ -159,9 +159,20 @@ acf(dYt,lag=30); pacf(dYt,lag=30)
 ```
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_2_1_dYtACFPACF.png"/></div>
 
-[**Step 2.2. Seasonal Differencing**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_2_2_SeasonalDiff.R)
+#### Step 2.2. Seasonal Differencing
+- Also, since the original data was recorded on a ***monthly*** basis, dividing data into ***12 groups*** which represent ***January to December*** respectively can help us gain more insights into seasonal patterns.
+```
+time1 <- c(rep(1:12,6), c(1:4))
+par(mfrow=c(1,1))
+monthplot(Yt, phase=time1, xlab="month", ylab="Yt")
+```
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_2_2_1_12Groups.png"/></div>
+
+
 
 - After seasonal differencing, the series still remains non-stationary with values of both ACF and PACF exceeding twice of their respective standard errors at lag 4, ***ARMA(4,4)*** should be further fitted. 
+
+
 
 **Step 3. Estimate the Orders of** ***p*** **and** ***q***  
 **Option 3.1. Interpret ACF and PACF Plots**  
