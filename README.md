@@ -210,18 +210,35 @@ acf(m2$residuals, lag=20); pacf(m2$residuals, lag=20)
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_3_1_2_Model2.png"/></div>
 <br>
 
+> **3.1.3. Grid Search**
+> **Model 3. (1,1,4) x (0,1,0)_4**
+- Minimum of ***AIC*** and ***BIC*** are both the ***11th*** one in the grid, # which suggests that ***(1,1,4)*** is the optimal ARIMA model.
+```
+a <- b <- c()
+for (p in c(0:5)) {
+  for (q in c(0:5)) {
+    result <- arima(Yt, order=c(p,1,q), seasonal=list(order=c(0,1,0), period=4))
+    a[p*6+(q+1)] <- result$aic
+    b[p*6+(q+1)] <- BIC(result)
+    cat("p=", p, "q=", q, "AIC = ", a[p*6+(q+1)], "BIC = ", b[p*6+(q+1)], "\n")
+  }}
+which(a == min(a))
+which(b == min(b))
+```
+```
+m3 <- arima(Yt, order=c(1,1,4), seasonal=list(order=c(0,1,0), period=4))
+acf(m3$residuals,lag=20); pacf(m3$residuals,lag=20)
+```
+
 ++++++++++
 
 
 
 
 
-- Since the coefficients of ***AR(2), AR(3), AR(4), MA(1), MA(2), MA(3)*** are less than twice of their respective standard errors, Model 1 can be modified by setting coefficients of above-mentioned as ***zero,*** which leads to ***Model 2. (1,1,4) x (0,1,0)_4 with coefficients of MA(1), MA(2), MA(3) being set as zero.***
 
-> [**Model 2. (1,1,4) x (0,1,0)_4 with coefficients of MA(1), MA(2), MA(3) being set as zero**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_3_1_2_M2.R)
 
-> **3.1.3. Grid Search**  
-> [**Model 3. (1,1,4) x (0,1,0)_4**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_3_1_3_M3.R)
+
 
 **Option 3.2. Compute ESACF**  
 > [**Model 4. (1,1,4) x (0,1,0)_4**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_3_2_M4.R)
