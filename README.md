@@ -237,7 +237,7 @@ acf(m3$residuals,lag=20); pacf(m3$residuals,lag=20)
 ```
 
 #### Option 3.2. Compute ESACF
-- When ***ar.max*** and ***ma.max*** are larger than ***18***, there pops up an error message suggesting that the matrix # may become singular without invertible matrix to perform further algebraic computation.
+- When ***ar.max*** and ***ma.max*** are larger than ***18***, there pops up an error message suggesting that the matrix may become singular without invertible matrix to perform further algebraic computation.
 > **Model 4. (1,1,4) x (0,1,0)_4**
 - The ***vertex*** of the zero triangle is at ***(1,4)*** position.
 - Since the input is the differenced data already, the result of ***(1,4)*** should be considered as ***(1,1,4) x (0,1,0)_4.***
