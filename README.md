@@ -186,7 +186,7 @@ acf(dYt_s, lag=25); pacf(dYt_s, lag=25)
 ### Step 3. Estimate the Orders of ***p*** and ***q***  
 #### Option 3.1. Interpret ACF and PACF Plots
 > **3.1.1. Compare with the Significance Range** 
-- Significance range is indicated with ***blue dotted lines*** which represent positive and negative values of ***standard error*** respectively.
+- Significance range is indicated with ***blue dotted lines*** which represent positive and negative values of ***standard error.***
 > **Model 1. (4,1,4) x (0,1,0)_4**
 - After seasonal differencing, the series still remains non-stationary with values of both ***ACF*** and ***PACF*** exceeding significance range at ***lag 4***; therefore, ***ARMA(4,4)*** should be further fitted.
 ```
