@@ -212,7 +212,7 @@ acf(m2$residuals, lag=20); pacf(m2$residuals, lag=20)
 
 > **3.1.3. Grid Search**
 > **Model 3. (1,1,4) x (0,1,0)_4**
-- Minimum of ***AIC*** and ***BIC*** are both the ***11th*** one in the grid, # which suggests that ***(1,1,4)*** is the optimal ARIMA model.
+- Minimum of ***AIC*** and ***BIC*** are both the ***11th*** one in the grid, which suggests that ***(1,1,4)*** is the optimal ARIMA model.
 ```
 a <- b <- c()
 for (p in c(0:5)) {
