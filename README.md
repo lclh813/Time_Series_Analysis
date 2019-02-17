@@ -120,7 +120,7 @@ library(tseries)
 ```
 data <- read.table("G:\\data.csv")
 ```
-- Declare data to be analyzed as variable Zt.
+- Declare data to be analyzed as variable ***Zt***.
 ```
 Zt <- data$V1
 ```
