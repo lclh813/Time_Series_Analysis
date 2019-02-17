@@ -145,7 +145,7 @@ ts.plot(Zt); ts.plot(Yt)
 - After variance stabilizing transformation, the sample ***ACF*** decays very slowly, which suggests that ***ordinary differencing*** should be applied.
 ```
 par(mfrow=c(1,2))
-acf(Yt,lag=25); pacf(Yt,lag=25)
+acf(Yt, lag=25); pacf(Yt, lag=25)
 ```
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_1_2_YtACFPACF.png"/></div>
 
@@ -155,7 +155,7 @@ acf(Yt,lag=25); pacf(Yt,lag=25)
 and therefore ***seasonal differencing*** should be applied.
 ```
 dYt <- diff(Yt) 
-acf(dYt,lag=30); pacf(dYt,lag=30)
+acf(dYt, lag=30); pacf(dYt, lag=30)
 ```
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_2_1_dYtACFPACF.png"/></div>
 
@@ -172,7 +172,7 @@ monthplot(Yt, phase=time1, xlab="month", ylab="Yt")
 ```
 time2 <- c(rep(rep(c(1:3),each=4),6), c(1,1,1,1))
 par(mfrow=c(1,1))
-monthplot(Yt,phase=time2, ylab="Yt")
+monthplot(Yt, phase=time2, ylab="Yt")
 ```
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_2_2_2_3Groups.png"/></div>
 
