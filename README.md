@@ -140,9 +140,7 @@ Yt <- (abs(Zt))^(lambda)
 par(mfrow = c(1,2))
 ts.plot(Zt); ts.plot(Yt)
 ```
-<br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_1_ZtYt.png"/></div>
-<br>
 
 - After variance stabilizing transformation, the sample ***ACF*** decays very slowly, which suggests that ***1st difference*** should be applied.
 ```
