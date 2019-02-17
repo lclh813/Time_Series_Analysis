@@ -100,9 +100,9 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 - Tool: R ```Package tseries``` ```Box.test```
 
 ## Part 4. Steps
-### [Complete Code: R]
+> [**Complete Code: R**]
 
-### Flow Chart of the Analysis Process
+### Analysis Process
 - Time series analysis of the given data was performed in accordance with the flow of ***red arrows***.
 
 <br>
