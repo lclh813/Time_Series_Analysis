@@ -177,7 +177,6 @@ monthplot(Yt, phase=time2, ylab="Yt")
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_2_2_2_3Groups.png"/></div>
 
 - Since a seasonal trend can be inferred from plots of ACF and PACF and those of grouped data divided into 12 and 3 groups as well, ***seasonal differencing*** with period ***4*** should be applied.
-- While both the value of ACF and PACF exceeds twice of its standard error at lag 4, the value of ***PACF*** exceeds its confidence interval more dramatically than that of ACF and therefore ***AR(4)*** model should be considered.
 ```
 dYt_s <- diff(dYt,4,1)
 par(mfrow=c(1,2))
@@ -185,14 +184,20 @@ acf(dYt_s, lag=25); pacf(dYt_s, lag=25)
 ```
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_2_2_3_dYtsACFPACF.png"/></div>
 
+### Step 3. Estimate the Orders of ***p*** and ***q***  
+#### Option 3.1. Interpret ACF and PACF Plots
+> **3.1.1. Compare with the Significance Range** 
+- Significance range is indicated with ***blue dotted lines*** which represent positive and negative values of ***standard error*** respectively.
+> **Model 1. (4,1,4) x (0,1,0)_4**
+- While both the value of ACF and PACF exceeds twice of its standard error at lag 4, the value of ***PACF*** exceeds its confidence interval more dramatically than that of ACF and therefore ***AR(4)*** model should be considered.
+```
+m1 <- arima(Yt, order=c(4,1,0), seasonal=list(order=c(0,1,0), period=4))
+acf(m1$residuals, lag=20); pacf(m1$residuals, lag=20)
+m1
+```
 
 
 
-
-**Step 3. Estimate the Orders of** ***p*** **and** ***q***  
-**Option 3.1. Interpret ACF and PACF Plots**  
-> **3.1.1. Compare with the Significance Range**  
-> [**Model 1. (4,1,4) x (0,1,0)_4**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_3_1_1_M1.R)  
 
 > **3.1.2. Determine the Coefficients of the Model**
 - Since the coefficients of ***AR(2), AR(3), AR(4), MA(1), MA(2), MA(3)*** are less than twice of their respective standard errors, Model 1 can be modified by setting coefficients of above-mentioned as ***zero,*** which leads to ***Model 2. (1,1,4) x (0,1,0)_4 with coefficients of MA(1), MA(2), MA(3) being set as zero.***
