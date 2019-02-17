@@ -188,10 +188,11 @@ acf(dYt_s, lag=25); pacf(dYt_s, lag=25)
 > **3.1.1. Compare with the Significance Range** 
 - Significance range is indicated with ***blue dotted lines*** which represent positive and negative values of ***standard error.***
 - After seasonal differencing, the series still remains non-stationary with ***ACF*** exceeding significance range at ***lag 4*** and ***lag 5*** and ***PACF*** at ***lag 4*** ; therefore, ***ARMA(4,4)*** and ***ARMA(4,5)*** should be further fitted.
-- Since all the coefficients of ***ARMA(4,5)*** are less than ***twice*** of their respective ***standard errors,***ARMA(4,5)*** may not be the proper model and further analysis will be focused on ***ARMA(4,4).***
+- Since all the coefficients of ***ARMA(4,5)*** are less than ***twice*** of their respective ***standard errors,*** ***ARMA(4,5)*** may not be the proper model and further analysis will be focused on ***ARMA(4,4).***
 
+<br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_3_1_0_Model0.png"/></div>
-
+<br>
 
 ==================================================================================================
 ```
