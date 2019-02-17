@@ -181,7 +181,7 @@ dYt_s <- diff(dYt,4,1)
 par(mfrow=c(1,2))
 acf(dYt_s, lag=25); pacf(dYt_s, lag=25)
 ```
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_2_2_3_dYtsACFPACF.png"/>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_2_2_3_dYtsACFPACF.png"/></div>
 
 ### Step 3. Estimate the Orders of ***p*** and ***q***  
 #### Option 3.1. Interpret ACF and PACF Plots
@@ -190,7 +190,7 @@ acf(dYt_s, lag=25); pacf(dYt_s, lag=25)
 - After seasonal differencing, the series still remains non-stationary with ***ACF*** exceeding significance range at ***lag 4*** and ***lag 5*** and ***PACF*** at ***lag 4*** ; therefore, ***ARMA(4,4)*** and ***ARMA(4,5)*** should be further fitted.
 - Since all the coefficients of ***ARMA(4,5)*** are less than ***twice*** of their respective ***standard errors,***ARMA(4,5)*** may not be the proper model and further analysis will be focused on ***ARMA(4,4).***
 
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_3_1_0_Model0.png"/>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_3_1_0_Model0.png"/></div>
 
 
 ==================================================================================================
