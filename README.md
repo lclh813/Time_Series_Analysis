@@ -177,6 +177,7 @@ monthplot(Yt, phase=time2, ylab="Yt")
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_2_2_2_3Groups.png"/></div>
 
 - Since a seasonal trend can be inferred from plots of ACF and PACF and those of grouped data divided into 12 and 3 groups as well, ***seasonal differencing*** with period ***4*** should be applied.
+- While both the value of ACF and PACF exceeds twice of its standard error at lag 4, the value of ***PACF*** exceeds its confidence interval more dramatically than that of ACF and therefore ***AR(4)*** model should be considered.
 ```
 dYt_s <- diff(dYt,4,1)
 par(mfrow=c(1,2))
@@ -185,7 +186,6 @@ acf(dYt_s, lag=25); pacf(dYt_s, lag=25)
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_2_2_3_dYtsACFPACF.png"/></div>
 
 
-- After seasonal differencing, the series still remains non-stationary with values of both ACF and PACF exceeding twice of their respective standard errors at lag 4, ***ARMA(4,4)*** should be further fitted. 
 
 
 
