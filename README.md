@@ -257,7 +257,7 @@ eacf(dYt_s, ar.max=16, ma.max=16)
 <br>
 
 **Option 3.3. Automatic ARIMA Modelling**
-- Since the input is the differenced data already, the result of (1,0,0) should be considered as (1,1,0) x (0,1,0)_4.
+- Since the input is the differenced data already, the result of ***(1,0,0)*** should be considered as ***(1,1,0) x (0,1,0)_4.***
 ```
 auto.arima(dYt_s)
 ```
