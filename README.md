@@ -235,6 +235,19 @@ m3 <- arima(Yt, order=c(1,1,4), seasonal=list(order=c(0,1,0), period=4))
 acf(m3$residuals,lag=20); pacf(m3$residuals,lag=20)
 ```
 
+#### Option 3.2. Compute ESACF
+- When ***ar.max*** and ***ma.max*** are larger than ***18***, there pops up an error message suggesting that the matrix # may become singular without invertible matrix to perform further algebraic computation.
+> **Model 4. (1,1,4) x (0,1,0)_4**
+- The ***vertex*** of the zero triangle is at ***(1,4)*** position.
+- Since the input is the differenced data already, the result of ***(1,4)*** should be considered as ***(1,1,4) x (0,1,0)_4.***
+```
+eacf(dYt_s, ar.max=15, ma.max=15)
+```
+
+<br>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_3_2_Model4.png"/></div>
+<br>
+
 ++++++++++
 
 
@@ -245,8 +258,6 @@ acf(m3$residuals,lag=20); pacf(m3$residuals,lag=20)
 
 
 
-**Option 3.2. Compute ESACF**  
-> [**Model 4. (1,1,4) x (0,1,0)_4**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_3_2_M4.R)
 
 **Option 3.3. Automatic ARIMA Modelling**
 > [**Model 5. (2,1,1) x (0,1,0)_4**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_3_3_M5.R)
