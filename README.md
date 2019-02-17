@@ -126,7 +126,7 @@ Zt <- data$V1
 ```
 
 ### Step 1. Choose Proper Transformations
-- Tool: Box-Cox Transforamtion with method defaulted as "guerrero."
+- Tool: ***Box-Cox Transforamtion*** with method defaulted as ***"guerrero."***
 - There is another transformation method "loglik," but since lambda calculated by "loglik" is not quite different from that calculated by "guerrero," lambda calculated by "guerrero" will be applied.
 ```
 lambda <- round(BoxCox.lambda(Zt, method="guerrero"), digits=2)
