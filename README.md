@@ -142,7 +142,7 @@ ts.plot(Zt); ts.plot(Yt)
 ```
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_1_1_ZtYt.png"/></div>
 
-- After variance stabilizing transformation, the sample ***ACF*** decays very slowly, which suggests that ***1st difference*** should be applied.
+- After variance stabilizing transformation, the sample ***ACF*** decays very slowly, which suggests that ***ordinary differencing*** should be applied.
 ```
 par(mfrow=c(1,2))
 acf(Yt,lag=25); pacf(Yt,lag=25)
@@ -151,7 +151,13 @@ acf(Yt,lag=25); pacf(Yt,lag=25)
 
 ### Step 2. Identfy the Order of ***d***  
 #### Step 2.1. Ordinary Differencing
-- After ordinary differencing, the sample ACF indicates that there is a seasonal trend with peaks occurring at lags of 4, which suggests that seasonal differencing should be applied.
+- After ***1st differencing***, the series remains non-stationary after 1st differencing; in addition, as the plot of ***ACF*** of the differenced series ***dYt*** suggests, there is a seasonal pattern that repeats ***every 4 months*** 
+and therefore ***seasonal differencing*** should be applied.
+```
+dYt <- diff(Yt) 
+acf(dYt,lag=30); pacf(dYt,lag=30)
+```
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_2_1_dYtACFPACF.png"/></div>
 
 [**Step 2.2. Seasonal Differencing**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_2_2_SeasonalDiff.R)
 
