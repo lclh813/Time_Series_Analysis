@@ -109,20 +109,20 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_0_FlowChart.png"/></div>
 <br>
 
-### Preparation
+### Step 0. Preparation
 - Import Library.
 ```
 library(forecast)
 library(TSA)
 library(tseries)
 ```
-- Import Datasets.
+- Import Data.
 ```
 data <- read.table("G:\\data.csv")
 ```
-- Declare data to be analyzed as variable ***Zt***.
+- Split data into training and validation sets and declare the ***training set*** as variable ***Zt***.
 ```
-Zt <- data$V1
+Zt <- data$V1[-c(73:76)]
 ```
 
 ### Step 1. Choose Proper Transformations
