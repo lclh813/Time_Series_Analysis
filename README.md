@@ -109,7 +109,7 @@ It is possible that GitHub fails to display Jupyter Notebooks. Should such circu
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_0_FlowChart.png"/></div>
 <br>
 
-**Preparation**
+### Preparation
 > Import Library.
 ```
 library(forecast)
@@ -125,7 +125,7 @@ data <- read.table("G:\\data.csv")
 Zt <- data$V1
 ```
 
-**Step 1. Choose Proper Transformations**
+### Step 1. Choose Proper Transformations**
 - Tool: Box-Cox Transforamtion with method defaulted as "guerrero."
 - There is another transformation method "loglik," but since lambda calculated by "loglik" is not quite different from that calculated by "guerrero," lambda calculated by "guerrero" will be applied.
 ```
@@ -135,7 +135,7 @@ lambda <- round(BoxCox.lambda(Zt, method="guerrero"), digits=2)
 - Compare the plot of the original data ***Zt*** to that of the transformed data ***Yt,*** the line of ***Yt*** is seen to be relatively stabilizing.
 - After variance stabilizing transformation, the sample ACF decays very slowly, which suggests that ordinary differencing should be applied.
 
-**Step 2. Identfy the Order of** ***d***  
+### Step 2. Identfy the Order of ***d***  
 [**Step 2.1. Ordinary Differencing**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_2_1_OrdinaryDiff.R)
 - After ordinary differencing, the sample ACF indicates that there is a seasonal trend with peaks occurring at lags of 4, which suggests that seasonal differencing should be applied.
 
