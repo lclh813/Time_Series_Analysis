@@ -169,11 +169,11 @@ monthplot(Yt, phase=time1, xlab="month", ylab="Yt")
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_2_2_1_12Groups.png"/></div>
 
 - It can be further observed that ***January to April***, ***May to August***, ***September to December*** can be classified as ***3*** different groups. 
-'''
+```
 time2 <- c(rep(rep(c(1:3),each=4),6), c(1,1,1,1))
 par(mfrow=c(1,1))
 monthplot(Yt,phase=time2, ylab="Yt")
-'''
+```
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_2_2_2_3Groups.png"/></div>
 
 
