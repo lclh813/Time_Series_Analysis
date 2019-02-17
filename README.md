@@ -188,7 +188,9 @@ acf(dYt_s, lag=25); pacf(dYt_s, lag=25)
 > **3.1.1. Compare with the Significance Range** 
 - Significance range is indicated with ***blue dotted lines*** which represent positive and negative values of ***standard error.***
 > **Model 1. (4,1,4) x (0,1,0)_4**
-- After seasonal differencing, the series still remains non-stationary with values of both ***ACF*** and ***PACF*** exceeding significance range at ***lag 4***; therefore, ***ARMA(4,4)*** should be further fitted.
+- After seasonal differencing, the series still remains non-stationary with ***ACF*** exceeding significance range at ***lag 4*** and ***lag 5*** and ***PACF*** at ***lag 4*** ; therefore, ***ARMA(4,4)*** and ***ARMA(5,4)*** should be further fitted.
+
+==================================================================================================
 ```
 m1 <- arima(Yt, order=c(4,1,4), seasonal=list(order=c(0,1,0), period=4))
 acf(m1$residuals, lag=20); pacf(m1$residuals, lag=20)
