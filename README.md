@@ -151,8 +151,7 @@ acf(Yt, lag=25); pacf(Yt, lag=25)
 
 ### Step 2. Identfy the Order of ***d***  
 #### Step 2.1. Ordinary Differencing
-- After ***1st differencing***, the series remains non-stationary after 1st differencing; in addition, as the plot of ***ACF*** of the differenced series ***dYt*** suggests, there is a seasonal pattern that repeats ***every 4 months*** 
-and therefore ***seasonal differencing*** should be applied.
+- The series remains non-stationary after 1st differencing; in addition, as the plot of ***ACF*** of the differenced series ***dYt*** suggests, there is a seasonal pattern that repeats ***every 4 months*** and therefore ***seasonal differencing*** should be applied.
 ```
 dYt <- diff(Yt) 
 acf(dYt, lag=25); pacf(dYt, lag=25)
