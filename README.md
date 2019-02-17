@@ -140,13 +140,14 @@ Yt <- (abs(Zt))^(lambda)
 par(mfrow = c(1,2))
 ts.plot(Zt); ts.plot(Yt)
 ```
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_1_ZtYt.png"/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_1_1_ZtYt.png"/></div>
 
 - After variance stabilizing transformation, the sample ***ACF*** decays very slowly, which suggests that ***1st difference*** should be applied.
 ```
 par(mfrow=c(1,2))
 acf(Yt,lag=25); pacf(Yt,lag=25)
 ```
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_1_2_YtACFPACF.png"/></div>
 
 ### Step 2. Identfy the Order of ***d***  
 #### Step 2.1. Ordinary Differencing
