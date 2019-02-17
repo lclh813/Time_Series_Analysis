@@ -217,62 +217,52 @@ acf(m2$residuals, lag=20); pacf(m2$residuals, lag=20)
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_3_1_2_Model2.png"/></div>
 <br>
 
-
-
-
-==================================================================================================
-
-
-> **3.1.2. Determine Coefficients of the Model**
-
-> **Model 2. (1,1,4) x (0,1,0)_4 with coefficients of MA(1), MA(2), MA(3) being set as zero**
-- Since coefficients of ***AR(2), AR(3), AR(4), MA(1), MA(2), MA(3)*** are less than ***twice*** of their respective ***standard errors***, ***Model 1*** can be modified by setting coefficients of above-mentioned as ***zero***.
-```
-m2 <- arima(Yt, order=c(1,1,4), fixed= c(NA,0,0,0,NA), seasonal=list(order=c(0,1,0),period=4))
-acf(m2$residuals, lag=20); pacf(m2$residuals, lag=20)
-```
-<br>
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_3_1_2_Model2.png"/></div>
-<br>
-
 > **3.1.3. Grid Search**
 
 > **Model 3. (1,1,4) x (0,1,0)_4**
 - Minimum of ***AIC*** and ***BIC*** are both the ***11th*** one in the grid, which suggests that ***(1,1,4)*** is the optimal ARIMA model.
 ```
-a <- b <- c()
+aic <- Bic <- c()
 for (p in c(0:5)) {
   for (q in c(0:5)) {
-    result <- arima(Yt, order=c(p,1,q), seasonal=list(order=c(0,1,0), period=4))
-    a[p*6+(q+1)] <- result$aic
-    b[p*6+(q+1)] <- BIC(result)
-    cat("p=", p, "q=", q, "AIC = ", a[p*6+(q+1)], "BIC = ", b[p*6+(q+1)], "\n")
+    result <- arima(dYt_s, order=c(p,0,q))
+    aic[p*6+(q+1)] <- result$aic
+    Bic[p*6+(q+1)] <- BIC(result)
+    cat("p=", p, "q=", q ,"AIC = ", aic[p*6+(q+1)],"BIC = ",Bic[p*6+(q+1)] ,"\n")
   }}
-which(a == min(a))
-which(b == min(b))
+which(aic == min(aic))
+which(Bic == min(Bic))
 ```
-
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_3_1_3_Model3.png"/></div>
 <br>
 
 ```
-m3 <- arima(Yt, order=c(1,1,4), seasonal=list(order=c(0,1,0), period=4))
-acf(m3$residuals,lag=20); pacf(m3$residuals,lag=20)
+m3 <- arima(Yt, order=c(1,1,4), 
+            seasonal=list(order=c(0,1,0), period=4))
+acf(m3$residuals, lag=20); pacf(m3$residuals, lag=20)
 ```
 
 #### Option 3.2. Compute ESACF
-- When ***ar.max*** and ***ma.max*** are larger than ***18***, there pops up an error message suggesting that the matrix may become singular without invertible matrix to perform further algebraic computation.
+- When ***ar.max*** and ***ma.max*** are larger than ***16***, there pops up an error message suggesting that the matrix may become singular without invertible matrix to perform further algebraic computation.
 > **Model 4. (1,1,4) x (0,1,0)_4**
-- The ***vertex*** of the zero triangle is at ***(1,4)*** position.
-- Since the input is the differenced data already, the result of ***(1,4)*** should be considered as ***(1,1,4) x (0,1,0)_4.***
+- The ***vertex*** of the zero triangle is at ***(2,3)*** position.
+- Since the input is the differenced data already, the result of ***(2,3)*** should be considered as ***(2,1,3) x (0,1,0)_4.***
 ```
-eacf(dYt_s, ar.max=15, ma.max=15)
+eacf(dYt_s, ar.max=16, ma.max=16)
 ```
 
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_3_2_Model4.png"/></div>
 <br>
+
+==================================================================================================
+
+
+
+
+
+
 
 ++++++++++
 
