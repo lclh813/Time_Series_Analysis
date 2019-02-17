@@ -267,6 +267,7 @@ auto.arima(dYt_s)
 <br>
 
 ### Step 4.  Model Selection
+- ***Model 2. (1,1,4) x (0,1,0)_4 with coefficients of MA(2) and MA(3) being set as zero*** has the smallest AIC and BIC and therefore is considered to be optimal.
 #### Option 1. Create table T1 to facilitate the comparison of AIC and BIC.
 ```
 T1 <- data.frame(matrix(c(BIC(m1),BIC(m2),BIC(m3),BIC(m4),BIC(m5),
