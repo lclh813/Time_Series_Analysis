@@ -269,7 +269,12 @@ auto.arima(dYt_s)
 <br>
 
 ### Step 4. Model Selection
-- ***Model 2. (1,1,4) x (0,1,0)_4 with coefficients of MA(2) and MA(3) being set as zero*** has the smallest AIC and BIC and therefore is considered to be optimal.
+- ***Model 2. (1,1,4) x (0,1,0)_4 with coefficients of MA(2) and MA(3) being set as zero*** has the smallest AIC and BIC and therefore is considered to be optimal and is the equivalence of the following.
+
+<br>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_4_1_ForecastingModel.png"/></div>
+<br>
+
 - If AIC and BIC suggest different lag orders, the model with the smallest ***BIC*** should be considered the optimal because BIC is a ***consistent model selection*** criterion while AIC is not.
 
 #### Option 1. Create table T1 to facilitate the comparison of AIC and BIC.
@@ -282,7 +287,7 @@ rownames(T1)=c("BIC", "AIC")
 ```
 
 <br>
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_4_1_Table1.png"/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_4_2_Table1.png"/></div>
 <br>
 
 #### Option 2. Create table T2 to rank AIC and BIC in ascending order.
@@ -295,7 +300,7 @@ rownames(T2)=c("BIC Rank","AIC Rank")
 ```
 
 <br>
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_4_2_Table2.png"/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_4_3_Table2.png"/></div>
 <br>
 
 ### Step 5. Residual Analysis
@@ -365,12 +370,13 @@ abline(h=0.05,col=2)
 <br>
 
 ### Step 6. Model Validation
-#### Step 6.1. Forecasting Model 
-- According to ***Step 4. Model Selection,*** ***Model 2. (1,1,4) x (0,1,0)_4 with coefficients of MA(2) and MA(3) being set as zero*** is considered to be the optimal forecasting model, which is the equivalence of:
+- According to ***Step 4. Model Selection,*** ***Model 2*** is considered to be the optimal forecasting model, which is the equivalence of:
 
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_6_1_ForecastingModel.png"/></div>
 <br>
+
+#### Step 6.1.   
 
 
 ==================================================================================================
