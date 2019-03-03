@@ -286,7 +286,6 @@ rownames(T1)=c("BIC", "AIC")
 ```
 a1 <- rank(c(BIC(m1),BIC(m2),BIC(m3),BIC(m4),BIC(m5)))
 a2 <- rank(c(m1$aic,m2$aic,m3$aic,m4$aic,m5$aic))
-# Combine dataframes by row.
 T2 <- data.frame(rbind(a1,a2))
 colnames(T2)=c("Model 1", "Model 2", "Model 3", "Model 4", "Model 5")
 rownames(T2)=c("BIC Rank","AIC Rank")
