@@ -191,7 +191,7 @@ acf(dYt_s, lag=25); pacf(dYt_s, lag=25)
 - Since all the coefficients of ***ARMA(4,5)*** are less than ***twice*** of their respective ***standard errors,*** ***ARMA(4,5)*** may not be the proper model and further analysis will be focused on ***ARMA(4,4).***
 
 <br>
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_3_1_0_Model0.png"/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_3_1_1_0_Model0.png"/></div>
 <br>
 
 > **Model 1. (4,1,4) x (0,1,0)_4**
@@ -201,7 +201,7 @@ m1 <- arima(Yt, order=c(4,1,4),
 acf(m1$residuals, lag=20); pacf(m1$residuals, lag=20)
 ```
 <br>
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_3_1_1_Model1.png"/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_3_1_1_1_Model1.png"/></div>
 <br>
 
 > **3.1.1.2. Determine Coefficients of the Model**
@@ -214,7 +214,7 @@ m2 <- arima(Yt, order=c(1,1,4),fixed=c(NA,NA,0,0,NA),
 acf(m2$residuals, lag=20); pacf(m2$residuals, lag=20)
 ```
 <br>
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_3_1_2_Model2.png"/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_3_1_1_2_Model2.png"/></div>
 <br>
 
 > **3.1.2. Grid Search**
@@ -234,7 +234,7 @@ which(aic == min(aic))
 which(Bic == min(Bic))
 ```
 <br>
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_3_1_3_Model3.png"/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_3_1_2_Model3.png"/></div>
 <br>
 
 ```
@@ -300,7 +300,14 @@ rownames(T2)=c("BIC Rank","AIC Rank")
 ### Step 5. Residual Analysis
 #### Step 5.1. Stationary Test
 #### Option 5.1.1. Interpret the Plot
+```
+par(mfrow=c(1,1))
+ts.plot(m2$residuals); abline(h=0, col=2)
+```
 
+<br>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_5_1_1_StationaryPlot.png"/></div>
+<br>
 
 
 
