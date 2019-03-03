@@ -1,6 +1,20 @@
 # Time Series Analysis
 ## Part 1. Objective
+-  To predict the future performance based on historical data.
 ## Part 2. Data
+> ***Table: Monthly Revenue Report of the Fruit Shop***
+> ***Period: January, 2012 - April, 2018***
+> ***Unit: in Thousands USD***  
+| Date   | Rev   |
+| :---:  | ---:  |
+| Jan-12 | 8.06  |
+| Feb-12 | 9.72  |
+| Mar-12 | 9.07  |
+| Apr-12 | 9.90  |
+| ...    | ...   |
+| Mar-18 | 38.67 |
+| Apr-18 | 44.91 |
+ 
 ## Part 3. Outline
 ### 3.1. General ***ARIMA(p,d,q)*** Model
 - ***ARIMA*** stands for ***Autoregressive Integrated Moving Average Models*** and are, in theory, the most general models for forecasting a time series.
@@ -122,11 +136,11 @@ library(tseries)
 ```
 - Import data.
 ```
-data <- read.table("G:\\data.csv")
+data <- read.table("G:\\data.txt", header=TRUE)
 ```
 - Split data into training and validation sets and declare the ***training set*** as variable ***Zt***.
 ```
-Zt <- data$V1[-c(73:76)]
+Zt <- data$Rev[-c(73:76)]
 ```
 
 ### Step 1. Choose Proper Transformations
@@ -383,10 +397,11 @@ future
 
 #### Step 6.2. Validation: Compare with the actual data
 - Since the actual data fall within the confidence interval of 80% and 95%, the forecasting power of the ***Model 2*** is considered to be satisfactory. 
+
 ```
 par(mfrow = c(1,1))
 plot(future, xlim=c(60,76))
-points(c(60:76), c(rep(0,13), (data$V1[c(73:76)])^(lambda)), col="red")
+points(c(60:76), c(rep(0,13), (data$Rev[c(73:76)])^(lambda)), col="red")
 ```
 
 <br>
