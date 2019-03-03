@@ -113,7 +113,9 @@
 - Null hypothesis: The first k autocorrelations are jointly zero, namely the data values are ***independent*** up to lag k.
 - Tool: R ```Package tseries``` ```Box.test```
 
-### Step 6. Model Validation
+### Step 6. Model Evaluation
+#### Step 6.1. Training
+#### Step 6.2. Validation
 - Tool: R ```Package forecast``` ```Arima```
 
 ### Step 7. Prediction
@@ -388,7 +390,7 @@ abline(h=0.05, col=2)
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_5_3_AutocorrelationPlot.png"/></div>
 <br>
 
-### Step 6. Model Validation
+### Step 6. Model Evaluation
 #### Step 6.1. Training: Fit the model by using the training data
 ```
 fit <- Arima(Yt, order=c(1,1,4), fixed=c(NA,NA,0,0,NA),
