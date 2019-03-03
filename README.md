@@ -380,8 +380,8 @@ p1 <- rep(0,20)
 for(i in 1:20){
   p1[i] <- Box.test(m2$residual, lag=i, type="Ljung")$p.value}
 par(mfrow=c(1,1))
-plot(p1, ylim=c(0,1), ylab="p",pch=3)
-abline(h=0.05,col=2)
+plot(p1, ylim=c(0,1), ylab="p", pch=3)
+abline(h=0.05, col=2)
 ```
 
 <br>
