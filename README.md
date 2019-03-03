@@ -344,6 +344,24 @@ shapiro.test((m2$residuals))
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_5_2_2_NormalityShapiro.png"/></div>
 <br>
 
+#### Step 5.3. Autocorrelation Test
+- ***Ljung-Box Q (LBQ) Test*** will be applied.
+- Null hypothesis (H0): Data values are ***independent*** up to lag k.
+- p-values of lag 1 to lag 20 are ***above*** the line of 0.05, which suggests that H0 cannot be rejected and residuals are ***not autocorrelated***.
+
+```
+p1 <- rep(0,20)
+for(i in 1:20){
+  p1[i] <- Box.test(m2$residual, lag=i, type="Ljung")$p.value}
+par(mfrow=c(1,1))
+plot(p1, ylim=c(0,1), ylab="p",pch=3)
+abline(h=0.05,col=2)
+```
+
+<br>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_5_3_AutocorrelationPlot.png"/></div>
+<br>
+
 ==================================================================================================
 
 
