@@ -128,7 +128,7 @@
 - Time series analysis of the given data was performed in accordance with the flow of ***blue arrows***.
 
 <br>
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_0_FlowChart.png"/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/.png"/></div>
 <br>
 
 ### Preparation
