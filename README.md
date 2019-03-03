@@ -1,6 +1,4 @@
 # Time Series Analysis
-## Notice
-It is possible that GitHub fails to display Jupyter Notebooks. Should such circumstances arise, please refer to ***Part 4. Steps*** listed below for code samples.
 ## Part 1. Objective
 ## Part 2. Data
 ## Part 3. Outline
@@ -311,7 +309,7 @@ ts.plot(m2$residuals); abline(h=0, col=2)
 
 #### Option 2. Augmented Dickey–Fuller (ADF) Test
 - Null hypothesis (H0): The series is ***not stationary***.
-- p-value = 0.01 suggesting that H0 can be rejected, namely the series is ***stationary***.
+- p-value = 0.01 suggesting that H0 can be rejected, namely the series is ***stationary*** which indicates that there is no seasonal effects left to be further extracted.
 
 ```
 adf.test(m2$residuals)
@@ -321,20 +319,30 @@ adf.test(m2$residuals)
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_5_1_2_StationaryADF.png"/></div>
 <br>
 
-#### step 2. Normality Test
-#### Option 1. Interpret the Plot
+#### step 5.2. Normality Test
+#### Option 5.2.1. Interpret the Plot
 - Points are seen to be close to the ***45-degree line***, which indicates that the series is ***normality*** distributed.
 
 ```
 par(mfrow=c(1,1))
-qqnorm(m4$residuals); qqline(m4$residuals, col=2)
+qqnorm(m2$residuals); qqline(m2$residuals, col=2)
 ```
 
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_5_2_1_NormalityPlot.png"/></div>
 <br>
 
+#### Option 5.2.2. Shapiro Test
+- Null hypothesis (H0): A set of observations is ***normally*** distributed.
+- p-value = 0.02 suggesting that H0 can be rejected, namely the series is ***not normally*** distributed and therfore the model is expected to have ***lower*** forecast accuracy. 
 
+```
+shapiro.test((m2$residuals))
+```
+
+<br>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_5_2_2_NormalityShapiro.png"/></div>
+<br>
 
 ==================================================================================================
 
