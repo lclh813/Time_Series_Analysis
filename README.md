@@ -100,6 +100,9 @@
 ### Step 6. Model Validation
 - Tool: R ```Package forecast``` ```Arima```
 
+### Step 7. Prediction
+- Tool: R ```Package forecast``` ```Arima```
+
 ## Part 4. Steps
 > [**Complete Code: R**]
 
@@ -380,7 +383,6 @@ future
 
 #### Step 6.2. Validation: Compare with the actual data
 - Since the actual data fall within the confidence interval of 80% and 95%, the forecasting power of the ***Model 2*** is considered to be satisfactory. 
-
 ```
 par(mfrow = c(1,1))
 plot(future, xlim=c(60,76))
@@ -391,7 +393,18 @@ points(c(60:76), c(rep(0,13), (data$V1[c(73:76)])^(lambda)), col="red")
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_6_2_Validation.png"/></div>
 <br>
 
-==================================================================================================
+### Step 7. Prediction
+```
+pred_Yt <- forecast(fit, h=16)
+pred_Zt <- pred_Yt[[4]][5:16]^(1/lambda)
+par(mfrow = c(1,1))
+ts.plot(data, xlim=c(1,88), ylim=c(1,50))
+lines(77:88, pred_Zt, col=2)
+```
+
+<br>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_7_Prediction.png"/></div>
+<br>
 
 ## Part 5. Reference
 - [NTHU STAT 5410 - Linear Models](http://www.stat.nthu.edu.tw/~swcheng/Teaching/stat5410/index.php)
