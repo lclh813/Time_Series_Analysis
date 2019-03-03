@@ -345,7 +345,6 @@ shapiro.test((m2$residuals))
 <br>
 
 #### Step 5.3. Autocorrelation Test
-- ***Ljung-Box Q (LBQ) Test*** will be applied.
 - Null hypothesis (H0): Data values are ***independent*** up to lag k.
 - p-values of lag 1 to lag 20 are ***above*** the line of 0.05, which suggests that H0 cannot be rejected and residuals are ***not autocorrelated***.
 
