@@ -122,8 +122,7 @@
 - Tool: R ```Package forecast``` ```Arima```
 
 ## Part 4. Steps
-> [**Complete Code**]
-(https://nbviewer.jupyter.org/github/lclh813/Time_Series_Analysis/blob/master/Code/CompleteCode.ipynb)
+> [**Complete Code**](https://nbviewer.jupyter.org/github/lclh813/Time_Series_Analysis/blob/master/Code/CompleteCode.ipynb)
 
 ### Analysis Process
 - Time series analysis of the given data was performed in accordance with the flow of ***blue arrows***.
