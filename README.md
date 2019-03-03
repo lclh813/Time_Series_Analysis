@@ -334,7 +334,7 @@ ts.plot(m2$residuals); abline(h=0, col=2)
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_5_1_1_StationaryPlot.png"/></div>
 <br>
 
-#### Option 2. Augmented Dickey–Fuller (ADF) Test
+#### Option 5.1.2. Augmented Dickey–Fuller (ADF) Test
 - Null hypothesis (H0): The series is ***not stationary***.
 - p-value = 0.01 suggesting that H0 can be rejected, namely the series is ***stationary*** which indicates that there is no seasonal effects left to be further extracted.
 
