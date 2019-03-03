@@ -321,7 +321,18 @@ adf.test(m2$residuals)
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_5_1_2_StationaryADF.png"/></div>
 <br>
 
+#### step 2. Normality Test
+#### Option 1. Interpret the Plot
+- Points are seen to be close to the 45-degree line, which indicates that the series is ***normality*** distributed.
 
+```
+par(mfrow=c(1,1))
+qqnorm(m4$residuals); qqline(m4$residuals, col=2)
+```
+
+<br>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_5_2_1_NormalityPlot.png"/></div>
+<br>
 
 ==================================================================================================
 
