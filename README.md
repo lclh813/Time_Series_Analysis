@@ -1,6 +1,6 @@
 # Time Series Analysis
 ## Part 1. Objective
--  To predict the future revenue growth based on historical performance.
+-  To ***predict*** the future revenue growth based on historical performance.
 
 ## Part 2. Data
 > ***Table: Monthly Revenue Report of the Fruit Shop***  
