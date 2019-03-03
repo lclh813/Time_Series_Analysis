@@ -57,7 +57,7 @@
 
 > **3.1.2. Grid Search**
 - Iteratively explore different combinations of parameters based on the detection of ***3.1.1.*** 
-- Tool: R ```Package forecast``` ```arima```
+- Tool: R ```Package TSA``` ```arima```
 
 #### Option 3.2. Compute ESACF
 - For an ***ARMA(p,q)*** process, the ***vertex*** of the zero triangle in the asymptotic ESACF will be at ***(p,q)*** position.
@@ -98,7 +98,7 @@
 - Tool: R ```Package tseries``` ```Box.test```
 
 ### Step 6. Model Validation
-- Tool: R ```Package forecast```
+- Tool: R ```Package forecast``` ```Arima```
 
 ## Part 4. Steps
 > [**Complete Code: R**]
@@ -372,7 +372,10 @@ abline(h=0.05,col=2)
 ### Step 6. Model Validation
 #### Step 6.1. Training: Fit the model by using the training data
 ```
-future <- forecast(m2, h=4)
+fit <- Arima(Yt, order=c(1,1,4), fixed=c(NA,NA,0,0,NA),
+            seasonal=list(order=c(0,1,0), period=4))
+future <- forecast(fit, h=4)
+future
 ```
 
 #### Step 6.2. Validation: Compare with the actual data
@@ -381,7 +384,7 @@ future <- forecast(m2, h=4)
 ```
 par(mfrow = c(1,1))
 plot(future, xlim=c(60,76))
-points(c(60:76), c(rep(0,13), (set$V1[c(73:76)])^(lambda)), col="red")
+points(c(60:76), c(rep(0,13), (data$V1[c(73:76)])^(lambda)), col="red")
 ```
 
 <br>
