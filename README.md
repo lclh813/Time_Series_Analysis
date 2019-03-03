@@ -185,7 +185,7 @@ acf(dYt_s, lag=25); pacf(dYt_s, lag=25)
 
 ### Step 3. Estimate the Orders of ***p*** and ***q***  
 #### Option 3.1. Interpret ACF and PACF Plots
-> **3.1.1. Compare with the Significance Range** 
+> **3.1.1.1. Compare with the Significance Range** 
 - Significance range is indicated with ***blue dotted lines*** which represent positive and negative values of ***standard error.***
 - After seasonal differencing, the series still remains non-stationary with ***ACF*** exceeding significance range at ***lag 4*** and ***lag 5*** and ***PACF*** at ***lag 4*** ; therefore, ***ARMA(4,4)*** and ***ARMA(4,5)*** should be further fitted.
 - Since all the coefficients of ***ARMA(4,5)*** are less than ***twice*** of their respective ***standard errors,*** ***ARMA(4,5)*** may not be the proper model and further analysis will be focused on ***ARMA(4,4).***
@@ -204,7 +204,7 @@ acf(m1$residuals, lag=20); pacf(m1$residuals, lag=20)
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_3_1_1_Model1.png"/></div>
 <br>
 
-> **3.1.2. Determine Coefficients of the Model**
+> **3.1.1.2. Determine Coefficients of the Model**
 
 > **Model 2. (1,1,4) x (0,1,0)_4 with coefficients of MA(2) and MA(3) being set as zero**
 - Since coefficients of ***AR(2), AR(3), AR(4), MA(2), MA(3)*** are less than ***twice*** of their respective ***standard errors***, ***Model 1*** can be modified by setting coefficients of above-mentioned as ***zero***.
@@ -217,7 +217,7 @@ acf(m2$residuals, lag=20); pacf(m2$residuals, lag=20)
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_3_1_2_Model2.png"/></div>
 <br>
 
-> **3.1.3. Grid Search**
+> **3.1.2. Grid Search**
 
 > **Model 3. (1,1,4) x (0,1,0)_4**
 - Minimum of ***AIC*** and ***BIC*** are both the ***11th*** one in the grid, which suggests that ***(1,1,4)*** is the optimal ARIMA model.
@@ -296,6 +296,11 @@ rownames(T2)=c("BIC Rank","AIC Rank")
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_4_2_Table2.png"/></div>
 <br>
+
+### Step 5. Residual Analysis
+#### Step 5.1. Stationary Test
+#### Option 5.1.1. Interpret the Plot
+
 
 
 
