@@ -5,6 +5,7 @@
 > ***Table: Monthly Revenue Report of the Fruit Shop***
 > ***Period: January, 2012 - April, 2018***
 > ***Unit: in Thousands USD***  
+
 | Date   | Rev   |
 | :---:  | ---:  |
 | Jan-12 | 8.06  |
