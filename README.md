@@ -394,6 +394,7 @@ points(c(60:76), c(rep(0,13), (data$V1[c(73:76)])^(lambda)), col="red")
 <br>
 
 ### Step 7. Prediction
+- Notice that the predicted outcome needs to be back-transformed to original scale.
 ```
 pred_Yt <- forecast(fit, h=16)
 pred_Zt <- pred_Yt[[4]][5:16]^(1/lambda)
