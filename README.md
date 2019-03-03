@@ -370,13 +370,23 @@ abline(h=0.05,col=2)
 <br>
 
 ### Step 6. Model Validation
-- According to ***Step 4. Model Selection,*** ***Model 2*** is considered to be the optimal forecasting model, which is the equivalence of:
+#### Step 6.1. Training: Fit the model by using the training data
+```
+fit <- Arima(Yt, order = c(1,1,4), fixed=c(NA,NA,0,0,NA),
+             seasonal=list(order=c(0,1,0), period=4))
+future <- forecast(fit, h=4)
+```
+
+#### Step 6.2. Validation: Compare with the actual data
+```
+par(mfrow = c(1,1))
+plot(future, xlim=c(60,76))
+points(c(60:76), c(rep(0,13), (set$V1[c(73:76)])^(lambda)), col="red")
+```
 
 <br>
-<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_6_1_ForecastingModel.png"/></div>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_6_2_Validation.png"/></div>
 <br>
-
-#### Step 6.1.   
 
 
 ==================================================================================================
