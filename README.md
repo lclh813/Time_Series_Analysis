@@ -97,6 +97,9 @@
 - Null hypothesis: The first k autocorrelations are jointly zero, namely the data values are ***independent*** up to lag k.
 - Tool: R ```Package tseries``` ```Box.test```
 
+### Step 6. Model Validation
+- Tool: R ```Package forecast```
+
 ## Part 4. Steps
 > [**Complete Code: R**]
 
@@ -265,7 +268,7 @@ auto.arima(dYt_s)
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_3_3_Model5.png"/></div>
 <br>
 
-### Step 4.  Model Selection
+### Step 4. Model Selection
 - ***Model 2. (1,1,4) x (0,1,0)_4 with coefficients of MA(2) and MA(3) being set as zero*** has the smallest AIC and BIC and therefore is considered to be optimal.
 - If AIC and BIC suggest different lag orders, the model with the smallest ***BIC*** should be considered the optimal because BIC is a ***consistent model selection*** criterion while AIC is not.
 
@@ -360,6 +363,15 @@ abline(h=0.05,col=2)
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_5_3_AutocorrelationPlot.png"/></div>
 <br>
+
+### Step 6. Model Validation
+#### Step 6.1. Forecasting Model 
+- According to ***Step 4. Model Selection,*** ***Model 2. (1,1,4) x (0,1,0)_4 with coefficients of MA(2) and MA(3) being set as zero*** is considered to be the optimal forecasting model, which is the equivalence of:
+
+<br>
+<div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_6_1_ForecastingModel.png"/></div>
+<br>
+
 
 ==================================================================================================
 
