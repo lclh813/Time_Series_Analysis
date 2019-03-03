@@ -372,9 +372,7 @@ abline(h=0.05,col=2)
 ### Step 6. Model Validation
 #### Step 6.1. Training: Fit the model by using the training data
 ```
-fit <- Arima(Yt, order = c(1,1,4), fixed=c(NA,NA,0,0,NA),
-             seasonal=list(order=c(0,1,0), period=4))
-future <- forecast(fit, h=4)
+future <- forecast(m2, h=4)
 ```
 
 #### Step 6.2. Validation: Compare with the actual data
