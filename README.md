@@ -269,7 +269,7 @@ auto.arima(dYt_s)
 <br>
 
 ### Step 4. Model Selection
-- ***Model 2. (1,1,4) x (0,1,0)_4 with coefficients of MA(2) and MA(3) being set as zero*** has the smallest AIC and BIC and therefore is considered to be optimal and is the equivalence of the following.
+- ***Model 2. (1,1,4) x (0,1,0)_4 with coefficients of MA(2) and MA(3) being set as zero*** has the smallest AIC and BIC and therefore is considered to be optimal and can be summarized by the following equation.
 
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_4_1_ForecastingModel.png"/></div>
