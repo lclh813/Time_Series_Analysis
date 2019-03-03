@@ -348,7 +348,7 @@ adf.test(m2$residuals)
 
 #### step 5.2. Normality Test
 #### Option 5.2.1. Interpret the Plot
-- Points are seen to be close to the ***45-degree line***, which indicates that the series is ***normality*** distributed.
+- Points are lying away from the ***45-degree line***, which indicates that the series is ***not normality*** distributed.
 
 ```
 par(mfrow=c(1,1))
