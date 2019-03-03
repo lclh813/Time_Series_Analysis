@@ -376,7 +376,7 @@ future <- forecast(m2, h=4)
 ```
 
 #### Step 6.2. Validation: Compare with the actual data
-- Since the actual data fall within the confidence interval of 80% and 95%, the forecasting power of the ***Model 2*** is quite satisfactory. 
+- Since the actual data fall within the confidence interval of 80% and 95%, the forecasting power of the ***Model 2*** is considered to be satisfactory. 
 
 ```
 par(mfrow = c(1,1))
@@ -388,18 +388,7 @@ points(c(60:76), c(rep(0,13), (set$V1[c(73:76)])^(lambda)), col="red")
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_6_2_Validation.png"/></div>
 <br>
 
-
 ==================================================================================================
-
-
-
-
-
-
-
-
-[**Step 4. Model Selection**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/C_4_ModelSelection.R)
-
 
 ## Part 5. Reference
 - [NTHU STAT 5410 - Linear Models](http://www.stat.nthu.edu.tw/~swcheng/Teaching/stat5410/index.php)
