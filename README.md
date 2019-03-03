@@ -210,7 +210,7 @@ acf(m1$residuals, lag=20); pacf(m1$residuals, lag=20)
 > **Model 2. (1,1,4) x (0,1,0)_4 with coefficients of MA(2) and MA(3) being set as zero**
 - Since coefficients of ***AR(2), AR(3), AR(4), MA(2), MA(3)*** are less than ***twice*** of their respective ***standard errors***, ***Model 1*** can be modified by setting coefficients of above-mentioned as ***zero***.
 ```
-m2 <- arima(Yt, order=c(1,1,4),fixed=c(NA,NA,0,0,NA),
+m2 <- arima(Yt, order=c(1,1,4), fixed=c(NA,NA,0,0,NA),
             seasonal=list(order=c(0,1,0), period=4))
 acf(m2$residuals, lag=20); pacf(m2$residuals, lag=20)
 ```
