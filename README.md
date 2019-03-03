@@ -376,6 +376,8 @@ future <- forecast(m2, h=4)
 ```
 
 #### Step 6.2. Validation: Compare with the actual data
+- Since the actual data fall within the confidence interval of 80% and 95%, the forecasting power of the ***Model 2*** is quite satisfactory. 
+
 ```
 par(mfrow = c(1,1))
 plot(future, xlim=c(60,76))
