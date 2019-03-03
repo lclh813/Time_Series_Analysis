@@ -296,7 +296,7 @@ auto.arima(dYt_s)
 
 - If AIC and BIC suggest different lag orders, the model with the smallest ***BIC*** should be considered the optimal because BIC is a ***consistent model selection*** criterion while AIC is not.
 
-#### Option 1. Create table T1 to facilitate the comparison of AIC and BIC.
+#### Option 4.1. Create table T1 to facilitate the comparison of AIC and BIC.
 ```
 T1 <- data.frame(matrix(c(BIC(m1),BIC(m2),BIC(m3),BIC(m4),BIC(m5),
                           m1$aic,m2$aic,m3$aic,m4$aic,m5$aic),
@@ -309,7 +309,7 @@ rownames(T1)=c("BIC", "AIC")
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_4_2_Table1.png"/></div>
 <br>
 
-#### Option 2. Create table T2 to rank AIC and BIC in ascending order.
+#### Option 4.2. Create table T2 to rank AIC and BIC in ascending order.
 ```
 a1 <- rank(c(BIC(m1),BIC(m2),BIC(m3),BIC(m4),BIC(m5)))
 a2 <- rank(c(m1$aic,m2$aic,m3$aic,m4$aic,m5$aic))
