@@ -310,7 +310,7 @@ ts.plot(m2$residuals); abline(h=0, col=2)
 <br>
 
 #### Option 2. Augmented Dickey–Fuller (ADF) Test
-- Null hypothesis (H0): The series is "not" stationary.
+- Null hypothesis (H0): The series is ***not stationary***.
 - p-value = 0.01 suggesting that H0 can be rejected, namely the series is ***stationary***.
 
 ```
