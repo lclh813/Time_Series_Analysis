@@ -431,8 +431,4 @@ lines(77:88, pred_Zt, col=2)
   - by ***Shao-Wei Cheng***, Institute of Statistics, National Tsing Hua University
 - [Time Series Analysis: Univariate and Multivariate Methods](https://www.amazon.com/Time-Analysis-Univariate-Multivariate-Methods/dp/0321322169) 
   - by ***William W.S. Wei***
-- [A Guide to Time Series Forecasting with ARIMA in Python 3](https://www.digitalocean.com/community/tutorials/a-guide-to-time-series-forecasting-with-arima-in-python-3)
-  - by ***Thomas Vincent***
 - [R Documentation](https://www.rdocumentation.org/)
-- [Wikipedia](https://www.wikipedia.org/)
-
