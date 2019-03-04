@@ -5,7 +5,7 @@
 ## Part 2. Data
 > ***Table: Monthly Revenue Report of the Fruit Shop***  
 > ***Period: January, 2012 - April, 2018***  
-> ***Unit: in Thousands USD***    
+> ***Unit: in Thousands NTD***    
 
 | Date   | Rev   |
 | :---:  | ---:  |
