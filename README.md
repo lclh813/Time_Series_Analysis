@@ -391,7 +391,7 @@ abline(h=0.05, col=2)
 <br>
 
 ### Step 6. Model Evaluation
-#### Step 6.1. Training: Fit the model by using the training data
+#### Step 6.1. Training: Fit the Model by Using the Training Data
 ```
 fit <- Arima(Yt, order=c(1,1,4), fixed=c(NA,NA,0,0,NA),
             seasonal=list(order=c(0,1,0), period=4))
@@ -399,7 +399,7 @@ future <- forecast(fit, h=4)
 future
 ```
 
-#### Step 6.2. Validation: Compare with the actual data
+#### Step 6.2. Validation: Compare with the Actual Data
 - Since the actual data fall within the confidence interval of 80% and 95%, the forecasting power of the ***Model 2*** is considered to be satisfactory. 
 
 ```
