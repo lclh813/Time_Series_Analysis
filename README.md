@@ -296,6 +296,8 @@ auto.arima(dYt_s)
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_4_1_ForecastingModel.png"/></div>
 <br>
 
+- Note that the absolute value of ***theta*** is suppoesed be ***smaller than 1***  which is the sufficient condition for a ***MA(1)*** process to be ***invertible.*** When a MA(1) is ***not invertible,*** the coefficients of the time series model is not decremented along with the increase of lag order, which suggests that an unforeseeable impact (exogenous shock) of long time ago may have greater influence on today than recent dates. Thus, due to the coefficients of ***the MA part of Model 2*** are ***greater than 1,*** the explanatory power of ***Model 2*** should be taken with prudence.      
+
 - If AIC and BIC suggest different lag orders, the model with the smallest ***BIC*** should be considered the optimal because BIC is a ***consistent model selection*** criterion while AIC is not.
 
 #### Option 4.1. Create table T1 to facilitate the comparison of AIC and BIC.
