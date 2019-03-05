@@ -1,6 +1,6 @@
 # Time Series Analysis
 ## Part 1. Objective
-To ***forecast revenue for the next 12 months*** based on based on historical monthly performance. 
+To ***forecast revenue for the next 12 months*** based on historical monthly performance. 
 
 ## Part 2. Data
 > ***Table: Monthly Revenue Report of the Fruit Shop***  
