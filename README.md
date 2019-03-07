@@ -297,7 +297,7 @@ auto.arima(dYt_s)
 <br>
 
 - ***ModeL Selection Consistency***  
-If AIC and BIC suggest different lag orders, the model with the smallest ***BIC*** should be considered the optimal because BIC is a ***consistent model selection criterion*** while AIC is not.
+If AIC and BIC suggest different lag orders, the model with the smallest ***BIC*** should be considered the optimal because BIC is a consistent model selection criterion while AIC is not.
 
 - ***Invertibility of MA(q)***   
 > *MA(1) can be expressed as the following equation:* 
