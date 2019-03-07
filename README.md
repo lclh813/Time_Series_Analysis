@@ -297,7 +297,7 @@ auto.arima(dYt_s)
 <br>
 
 - ***Invertibility of MA(q)***   
-&nbsp; MA(1) can be expressed as the following equation: 
+&nbsp;MA(1) can be expressed as the following equation: 
 
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Formula/F_5_1_MA1.png"/></div>
