@@ -297,32 +297,32 @@ auto.arima(dYt_s)
 <br>
 
 - ***Invertibility of MA(q)***   
-  - MA(1) can be expressed as the following equation: 
+&nbsp;MA(1) can be expressed as the following equation: 
 
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Formula/F_5_1_MA1.png"/></div>
 <br>
--
-  - Since 
+
+&nbsp;Since 
 
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Formula/F_5_2_KnownCondition.png"/></div>
 <br>
 
-  - if we multiply both sides of the MA(1) equation by
+&nbsp;if we multiply both sides of the MA(1) equation by
 
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Formula/F_5_3_Multiplier.png"/></div>
 <br>
 
-  - an MA(1) model can be transformed into an infinite order AR model, which can be expressed as the following equation:
+&nbsp;an MA(1) model can be transformed into an infinite order AR model, which can be expressed as the following equation:
 
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Formula/F_5_4_InfiniteAR.png"/></div>
 <br>
 
-  - If the coefficients of an infinite AR process are not decremented along with the increase of lag order, which suggests that an unforeseeable impact (exogenous shock) of long time ago is likely to have greater influence on today than recent dates does, an infinite AR process will be regarded as non-stationary. 
-  - In conclusion, since there is a coefficient of the MA part greater than 1, the explanatory power of Model 3 should be taken with discretion.
+&nbsp;If the coefficients of an infinite AR process are not decremented along with the increase of lag order, which suggests that an unforeseeable impact (exogenous shock) of long time ago is likely to have greater influence on today than recent dates does, an infinite AR process will be regarded as non-stationary. 
+&nbsp;In conclusion, since there is a coefficient of the MA part greater than 1, the explanatory power of Model 3 should be taken with discretion.
 
 - If AIC and BIC suggest different lag orders, the model with the smallest ***BIC*** should be considered the optimal because BIC is a ***consistent model selection*** criterion while AIC is not.
 
