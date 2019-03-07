@@ -321,7 +321,7 @@ auto.arima(dYt_s)
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Formula/F_5_4_InfiniteAR.png"/></div>
 <br>
 
-> *If the coefficients of an infinite AR process are not decremented along with the increase of lag order, which suggests that an unforeseeable impact (***exogenous shock***) of long time ago is likely to have greater influence on today than recent dates does, an infinite AR process will be regarded as non-stationary.*  
+> *If the coefficients of an infinite AR process are not decremented along with the increase of lag order, which suggests that an unforeseeable impact (exogenous shock) of long time ago is likely to have greater influence on today than recent dates does, an infinite AR process will be regarded as non-stationary.*  
 
 > *In conclusion, since there is a coefficient of the MA part greater than 1, ***the explanatory power of Model 2 should be taken with discretion.****
 
