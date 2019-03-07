@@ -125,7 +125,7 @@ To ***forecast revenue for the next 12 months*** based on historical monthly per
 > [**Complete Code**](https://github.com/lclh813/Time_Series_Analysis/blob/master/Code/CompleteCode.R)
 
 ### Analysis Process
-- Time series analysis of the given data was performed in accordance with the flow of ***blue arrows***.
+- Time series analysis of the given data is performed in accordance with the flow of ***blue arrows***.
 
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_0_FlowChart.png"/></div>
