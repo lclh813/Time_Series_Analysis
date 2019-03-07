@@ -296,8 +296,8 @@ auto.arima(dYt_s)
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_4_1_ForecastingModel.png"/></div>
 <br>
 
-- ***ModeL Selection Consistency***
-> If AIC and BIC suggest different lag orders, the model with the smallest ***BIC*** should be considered the optimal because BIC is a ***consistent model selection criterion*** while AIC is not.
+- ***ModeL Selection Consistency***  
+If AIC and BIC suggest different lag orders, the model with the smallest ***BIC*** should be considered the optimal because BIC is a ***consistent model selection criterion*** while AIC is not.
 
 - ***Invertibility of MA(q)***   
 > *MA(1) can be expressed as the following equation:* 
