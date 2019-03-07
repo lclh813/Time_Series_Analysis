@@ -296,6 +296,9 @@ auto.arima(dYt_s)
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Pic/P_4_1_ForecastingModel.png"/></div>
 <br>
 
+- ***ModeL Selection Consistency***
+> If AIC and BIC suggest different lag orders, the model with the smallest ***BIC*** should be considered the optimal because BIC is a ***consistent model selection criterion*** while AIC is not.
+
 - ***Invertibility of MA(q)***   
 > *MA(1) can be expressed as the following equation:* 
 
@@ -324,8 +327,6 @@ auto.arima(dYt_s)
 > *If the coefficients of an infinite AR process are not decremented along with the increase of lag order, which suggests that an unforeseeable impact (exogenous shock) of long time ago is likely to have greater influence on today than recent dates does, an infinite AR process will be regarded as non-stationary.*  
 
 > *In conclusion, since there is a coefficient of the MA part greater than 1, ***the explanatory power of Model 2 should be taken with discretion.****
-
-- If AIC and BIC suggest different lag orders, the model with the smallest ***BIC*** should be considered the optimal because BIC is a ***consistent model selection*** criterion while AIC is not.
 
 #### Option 4.1. Create table T1 to facilitate the comparison of AIC and BIC.
 ```
