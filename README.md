@@ -306,7 +306,7 @@ If AIC and BIC suggest different lag orders, the model with the smallest ***BIC*
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Formula/F_5_1_MA1.png"/></div>
 <br>    
 
-> *Since:*  
+  - *Since:*  
 
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Formula/F_5_2_KnownCondition.png"/></div>
