@@ -304,14 +304,12 @@ If AIC and BIC suggest different lag orders, the model with the smallest ***BIC*
 
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Formula/F_5_1_MA1.png"/></div>
-<br>    
-
+<br>   
   * *Since:*  
 
 <br>
 <div align=center><img src="https://github.com/lclh813/Time_Series_Analysis/blob/master/Formula/F_5_2_KnownCondition.png"/></div>
-<br>
-
+<br>  
   * *if we multiply both sides of the MA(1) equation by:*   
 
 <br>
@@ -407,7 +405,7 @@ shapiro.test((m2$residuals))
 
 #### Step 5.3. Autocorrelation Test
 - Null hypothesis (H0): Data values are ***independent*** up to lag k.
-- p-values of lag 1 to lag 20 are ***above*** the line of 0.05, which suggests that H0 cannot be rejected and residuals are ***not autocorrelated***.
+- p-values of lag 1 to lag 20 are ***above*** the line of 0.05, which suggests that H0 cannot be rejected and residuals are ***not autocorrelated.***
 
 ```
 p1 <- rep(0,20)
